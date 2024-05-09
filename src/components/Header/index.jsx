@@ -5,8 +5,11 @@ export function Header(){
         <Container>
             <h1>RocketMovies</h1>
             <input type="search" name="" id="" />
-            <strong>Alexandre Ribeiro</strong>
-            <span>Sair</span>
+            <div>
+                <h2>Foto</h2>
+                <strong>Alexandre Ribeiro</strong>
+                <span>Sair</span>
+            </div>
         </Container>
     )
 }
