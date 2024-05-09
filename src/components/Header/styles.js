@@ -7,6 +7,7 @@ export const Container = styled.header`
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 2rem;
 
     h1{
         color: ${({ theme }) => theme.COLORS.PINK};
