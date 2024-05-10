@@ -13,7 +13,7 @@ export function Header(){
                 <img src="https://github.com/Maresias.png" alt="Foto do usúario" />
                 <div>
                     <strong>Alexandre Ribeiro</strong>
-                    <span>Sair</span>
+                    <a href="#">Sair</a>
                 </div>
             </div>
         </Container>

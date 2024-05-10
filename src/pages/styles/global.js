@@ -18,4 +18,8 @@ export default createGlobalStyle`
         background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
         font-family: "Roboto", sans-serif;
     }
+
+    a {
+        text-decoration: none;
+    }
 `
