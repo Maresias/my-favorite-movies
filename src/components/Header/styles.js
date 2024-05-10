@@ -16,11 +16,17 @@ export const Container = styled.header`
     > div{
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        
 
 
         strong {
             color: ${({theme}) => theme.COLORS.WHITE};
+        }
+
+        > img{
+            width: 5.4rem;
+            height: 5.4rem;
+            border-radius: 50%;
         }
     }
 

@@ -10,9 +10,11 @@ export function Header(){
             type="search"
             />
             <div>
-                <h2>Foto</h2>
-                <strong>Alexandre Ribeiro</strong>
-                <span>Sair</span>
+                <img src="https://github.com/Maresias.png" alt="Foto do usúario" />
+                <div>
+                    <strong>Alexandre Ribeiro</strong>
+                    <span>Sair</span>
+                </div>
             </div>
         </Container>
     )
