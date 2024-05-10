@@ -17,7 +17,13 @@ export const Container = styled.header`
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+
+
+        strong {
+            color: ${({theme}) => theme.COLORS.WHITE};
+        }
     }
+
 `
 
 
