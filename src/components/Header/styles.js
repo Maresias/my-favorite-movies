@@ -15,8 +15,8 @@ export const Container = styled.header`
 
     > div{
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: row-reverse;
+        gap: 0.5rem;
 
 
         strong {
@@ -24,9 +24,19 @@ export const Container = styled.header`
         }
 
         > img{
-            width: 5.4rem;
-            height: 5.4rem;
+            width: 5rem;
+            height: 5rem;
             border-radius: 50%;
+            object-fit: cover;
+
+            border: 1px solid ${({ theme}) => theme.COLORS.GRAY_200};
+        }
+
+        >div {
+            display: flex;
+            flex-direction: column;
+            align-items:flex-end;
+            justify-content: center;
         }
     }
 
