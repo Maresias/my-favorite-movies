@@ -11,7 +11,7 @@ export function Home(){
             <Box>
                 <h2>Meus Filmes</h2>
 
-                <Button title="mas"/>
+                <Button title=" + Adicionar filme"/>
             </Box>
             <Content>
 
