@@ -3,6 +3,7 @@ import { FiPlus } from 'react-icons/fi'
 
 
 import { Header } from '../../components/Header'
+import { Section } from '../../components/Section'
 
 export function Home(){
     return (
@@ -16,7 +17,9 @@ export function Home(){
                 </NewMovie>
             </Box>
             <Content>
-                
+                <Section>
+                    
+                </Section>
             </Content>
         </Container>
     )
