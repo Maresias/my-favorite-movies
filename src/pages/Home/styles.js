@@ -18,9 +18,22 @@ export const Box = styled.div`
         color: ${({ theme }) => theme.COLORS.WHITE};
     }
 
-    button{
-        width: 200px;
-    }
+    
+`
+
+export const NewMovie = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+
+    background-color: ${({ theme }) => theme.COLORS.PINK};
+    border: none;
+    padding: .8rem;
+    border-radius: .5rem;
+    width: 170px;
+
+    cursor: pointer;
 `
 
 export const Content = styled.div`
@@ -29,5 +42,7 @@ export const Content = styled.div`
     margin: 0 auto;
     height: 700px;
 `
+
+
 
 

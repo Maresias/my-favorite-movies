@@ -1,8 +1,8 @@
-import { Box, Container, Content } from './styles'
+import { Box, Container, Content, NewMovie } from './styles'
+import { FiPlus } from 'react-icons/fi'
 
 
 import { Header } from '../../components/Header'
-import { Button} from '../../components/Button'
 
 export function Home(){
     return (
@@ -10,8 +10,10 @@ export function Home(){
             <Header/>
             <Box>
                 <h2>Meus Filmes</h2>
-
-                <Button title=" + Adicionar filme"/>
+                <NewMovie>
+                    <FiPlus/>
+                    Adicionar Filme
+                </NewMovie>
             </Box>
             <Content>
 
