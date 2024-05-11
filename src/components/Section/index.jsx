@@ -2,10 +2,10 @@ import { Container } from './styles'
 import ii from '../../assets/stars.svg'
 
 
-export function Section(){
+export function Section({title, ...rest}){
     return (
-        <Container>
-            <h1>Filme</h1>
+        <Container {...rest}>
+            {title}
             <img src={ii} alt="" />
         </Container>
     )

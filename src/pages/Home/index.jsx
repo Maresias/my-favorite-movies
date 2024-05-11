@@ -17,8 +17,8 @@ export function Home(){
                 </NewMovie>
             </Box>
             <Content>
-                <Section>
-                    
+                <Section title={"Homen Aranha"}>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, a. Velit quos reiciendis labore atque animi? Sit quibusdam, omnis, pariatur necessitatibus dolorem consectetur, autem in officia neque itaque placeat perferendis?</p>
                 </Section>
             </Content>
         </Container>
