@@ -37,10 +37,11 @@ export const NewMovie = styled.button`
 `
 
 export const Content = styled.div`
-    background-color: gray;
     max-width:  900px;
-    margin: 0 auto;
     height: 700px;
+
+    margin: 0 auto;
+    border: 2px solid ${({ theme}) => theme.COLORS.BLACK};
 `
 
 

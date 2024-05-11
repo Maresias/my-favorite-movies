@@ -16,7 +16,7 @@ export function Home(){
                 </NewMovie>
             </Box>
             <Content>
-
+                
             </Content>
         </Container>
     )
