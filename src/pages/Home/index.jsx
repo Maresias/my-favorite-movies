@@ -2,6 +2,7 @@ import { Box, Container, Content } from './styles'
 
 
 import { Header } from '../../components/Header'
+import { Button} from '../../components/Button'
 
 export function Home(){
     return (
@@ -10,7 +11,7 @@ export function Home(){
             <Box>
                 <h2>Meus Filmes</h2>
 
-                botao
+                <Button title="mas"/>
             </Box>
             <Content>
 

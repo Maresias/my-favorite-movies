@@ -17,6 +17,10 @@ export const Box = styled.div`
     h2 {
         color: ${({ theme }) => theme.COLORS.WHITE};
     }
+
+    button{
+        width: 200px;
+    }
 `
 
 export const Content = styled.div`
