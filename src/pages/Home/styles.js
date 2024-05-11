@@ -13,6 +13,10 @@ export const Box = styled.div`
     height: 7rem;
     max-width: 900px;
     margin: 0 auto;
+
+    h2 {
+        color: ${({ theme }) => theme.COLORS.WHITE};
+    }
 `
 
 export const Content = styled.div`
