@@ -12,6 +12,19 @@ export default createGlobalStyle`
         -moz-font-smoothings:antialiased;
     }
 
+    ::-webkit-scrollbar-track {
+        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+    }
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: ${({ theme }) => theme.COLORS.PINK};
+        border-radius: 3px;
+        
+    }
+
+
     
 
     body {

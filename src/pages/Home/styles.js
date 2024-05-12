@@ -10,7 +10,7 @@ export const Box = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 7rem;
+    height: 3rem;
     max-width: 900px;
     margin: 0 auto;
 
@@ -42,11 +42,13 @@ export const Content = styled.div`
     flex-direction: column;
     gap: 1rem;
     max-width:  900px;
+    height: 500px;
     overflow-y: scroll;
     padding: .2rem;
 
     margin: 0 auto;
     border: 2px solid ${({ theme}) => theme.COLORS.BLACK};
+
 `
 
 
