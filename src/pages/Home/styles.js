@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
     width: 100%;
     height: 100vh;
-    overflow-y: hidden;
+    display: grid;
 `
 
 export const Box = styled.div`
@@ -16,6 +16,7 @@ export const Box = styled.div`
 
     h2 {
         color: ${({ theme }) => theme.COLORS.WHITE};
+        width: 730px;
     }
 
     
@@ -37,8 +38,12 @@ export const NewMovie = styled.button`
 `
 
 export const Content = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     max-width:  900px;
-    height: 700px;
+    overflow-y: scroll;
+    padding: .2rem;
 
     margin: 0 auto;
     border: 2px solid ${({ theme}) => theme.COLORS.BLACK};

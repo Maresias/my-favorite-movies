@@ -1,12 +1,14 @@
 import { Container } from './styles'
-import ii from '../../assets/stars.svg'
+import star from '../../assets/stars.svg'
+import { Children } from 'react'
 
 
-export function Section({title, ...rest}){
+export function Section({title, children}){
     return (
-        <Container {...rest}>
-            {title}
-            <img src={ii} alt="" />
+        <Container  >
+            <h3>{title}</h3>
+            <img src={star} alt="" />
+            { children }
         </Container>
     )
 }
