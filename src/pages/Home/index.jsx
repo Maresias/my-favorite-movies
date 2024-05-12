@@ -4,6 +4,7 @@ import { FiPlus } from 'react-icons/fi'
 
 import { Header } from '../../components/Header'
 import { Section } from '../../components/Section'
+import { Tag } from '../../components/Tag'
 
 export function Home(){
     return (
@@ -20,6 +21,9 @@ export function Home(){
                 <Section title={"Homen Aranha"}>
                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id delectus nemo debitis hic suscipit dolor veniam impedit deserunt tenetur perspiciatis veritatis consequatur possimus doloribus porro totam, iure dolore corrupti aperiam.</p>
                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quasi quisquam deleniti quidem, magni enim expedita obcaecati recusandae ea voluptates laudantium debitis necessitatibus quos voluptate adipisci excepturi, accusamus dolorum temporibus?</p>
+                    <Tag title="Aventura"/>
+                    <Tag title="Acão"/>
+                    <Tag title="Herói"/>
                 </Section>
 
                 <Section title={"Super Man"}>
