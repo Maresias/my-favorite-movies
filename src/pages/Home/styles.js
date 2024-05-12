@@ -11,12 +11,12 @@ export const Box = styled.div`
     justify-content: space-between;
     align-items: center;
     height: 3rem;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
 
     h2 {
         color: ${({ theme }) => theme.COLORS.WHITE};
-        width: 730px;
+        width: 1030px;
     }
 
     
@@ -41,7 +41,7 @@ export const Content = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    max-width:  900px;
+    max-width:  1200px;
     height: 500px;
     overflow-y: scroll;
     padding: .2rem;
