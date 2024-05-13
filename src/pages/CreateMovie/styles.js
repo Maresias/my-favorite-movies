@@ -1,14 +1,21 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-
+    height: 100vh;
+    display: grid;
+    
 `
 
 export const Content = styled.div`
     display: grid;
+    gap: 4rem;
+
     max-width: 1200px;
     height: 100vh;
     margin: 5rem auto 0;
+
+    overflow-y: scroll;
+
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
