@@ -1,7 +1,9 @@
+import { FiArrowLeft } from 'react-icons/fi'
 import { Container, Content, Brand, InputArea, Textarea, Markers,  ButtonArea } from './styles'
 
 import {Header} from '../../components/Header'
 import { Input } from '../../components/Input'
+import { ButtonText } from '../../components/ButtonText'
 
 export function CreateMovie(){
     return (
@@ -11,6 +13,10 @@ export function CreateMovie(){
                 <Content>
 
                     <Brand>
+                        <div>
+                            <FiArrowLeft/>
+                            <ButtonText title={"Voltar"}/>
+                        </div>
                         <h1>novo filme</h1>
                     </Brand>
 
