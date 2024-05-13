@@ -1,6 +1,7 @@
 import { Container } from './styles'
 
 import { Input } from '../Input'
+import { ButtonText } from '../ButtonText'
 
 export function Header(){
     return (
@@ -13,7 +14,7 @@ export function Header(){
                 <img src="https://github.com/Maresias.png" alt="Foto do usúario" />
                 <div>
                     <strong>Alexandre Ribeiro</strong>
-                    <a href="#">Sair</a>
+                    <ButtonText title={"sair"}/>
                 </div>
             </div>
         </Container>
