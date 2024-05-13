@@ -1,4 +1,4 @@
-import { Container, Content } from './styles'
+import { Container, Content, Brand, InputArea, Textarea, ButtonArea } from './styles'
 
 import {Header} from '../../components/Header'
 import { Input } from '../../components/Input'
@@ -9,18 +9,28 @@ export function CreateMovie(){
             <Header/>
             <main>
                 <Content>
-                    <div>
+                    <Brand>
                         <h1>novo filme</h1>
-                    </div>
-                    <Input type="text"/>
-                    <Input type="text"/>
-                    <textarea name="" id=""></textarea>
-                    <div>
-                        <span>carro</span> <span> carro</span>
-                    </div>
+                    </Brand>
 
-                    <button>maresias</button>
-                    <button>saosenastiao</button>
+                   
+                    <InputArea>
+
+                        <Input type="text"/>
+                        <Input type="text"/>
+
+                    </InputArea>
+
+                    <Textarea/>
+
+                    <Markers>
+                        <span>carro</span> <span> carro</span>
+                    </Markers>
+
+                    <ButtonArea>
+                        <button>maresias</button>
+                        <button>saosenastiao</button>
+                    </ButtonArea>
                 </Content>
             </main>
         </Container>

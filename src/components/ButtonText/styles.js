@@ -8,4 +8,5 @@ export const Container = styled.button`
 
     font-size: 1.1rem;
     color: ${({ theme }) => theme.COLORS.GRAY_200};
+    cursor: pointer;
 `
