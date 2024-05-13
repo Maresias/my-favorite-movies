@@ -22,6 +22,18 @@ export const Content = styled.div`
 export const Brand = styled.div`
     grid-area: Brand;
     width: 100%;
+    color: ${({ theme }) => theme.COLORS.WHITE};
+
+    > div {
+        color: ${({ theme }) => theme.COLORS.PINK};
+        Button{
+            
+            margin-left: .7rem;
+            color: ${({ theme }) => theme.COLORS.PINK};
+        }
+
+        margin-bottom: 1.6rem;
+    }
 `
 export const InputArea  = styled.div`
     grid-area: InputArea;

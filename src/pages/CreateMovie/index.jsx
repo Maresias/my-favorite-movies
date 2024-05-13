@@ -17,7 +17,7 @@ export function CreateMovie(){
                             <FiArrowLeft/>
                             <ButtonText title={"Voltar"}/>
                         </div>
-                        <h1>novo filme</h1>
+                        <h1>Novo filme</h1>
                     </Brand>
 
                    
