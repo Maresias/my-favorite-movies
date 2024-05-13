@@ -1,4 +1,4 @@
-import { Container, Content, Brand, InputArea, Textarea, ButtonArea } from './styles'
+import { Container, Content, Brand, InputArea, Textarea, Markers,  ButtonArea } from './styles'
 
 import {Header} from '../../components/Header'
 import { Input } from '../../components/Input'
@@ -9,6 +9,7 @@ export function CreateMovie(){
             <Header/>
             <main>
                 <Content>
+
                     <Brand>
                         <h1>novo filme</h1>
                     </Brand>
