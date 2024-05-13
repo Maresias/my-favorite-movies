@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
 export const Container = styled.section`
-
-    gap: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
     background-color: rgb(255, 133, 155, 5%);
      
     padding: 1rem;

@@ -50,7 +50,8 @@ export const Content = styled.div`
     border: 2px solid ${({ theme}) => theme.COLORS.BLACK};
 
 `
-
+export const Frame = styled.div`
+`
 
 
 
