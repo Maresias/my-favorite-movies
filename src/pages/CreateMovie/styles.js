@@ -11,3 +11,11 @@ export const Content = styled.div`
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
 `
+export const InputArea  = styled.div`
+`
+export const Textarea  = styled.div`
+`
+export const ButtonArea = styled.div`
+`
+export const Brand = styled.div`
+`
