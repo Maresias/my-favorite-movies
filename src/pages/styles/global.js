@@ -16,11 +16,12 @@ export default createGlobalStyle`
         background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
     }
     ::-webkit-scrollbar {
-        width: 6px;
+        width: 4px;
     }
     ::-webkit-scrollbar-thumb {
         background: ${({ theme }) => theme.COLORS.PINK};
-        border-radius: 3px;
+        border-radius: 3px;  
+
         
     }
 
