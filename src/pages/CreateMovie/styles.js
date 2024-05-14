@@ -4,11 +4,12 @@ export const Container = styled.div`
     height: 100%;
     display: grid;
     height: 100vh;
+    overflow-y: hidden;
 
     > main {
-        overflow-y: scroll;
-        width: 1200px;
-        margin: 0 auto;
+        height: 100vh;
+        width: 100%;
+        display: grid;
     }
     
 `
@@ -17,9 +18,8 @@ export const Content = styled.div`
     display: grid;
     gap: 4rem;
     overflow-y:scroll;
-    max-width: 1200px;
-    height: 100vh;
-    height: 100vh;
+    width: 1100px;
+    height: 700px;
     margin: 5rem auto 0;
 
     grid-template-columns: repeat(2, 1fr);
@@ -56,6 +56,7 @@ export const InputArea  = styled.div`
 `
 export const Textarea  = styled.textarea`
     grid-area: TextArea;
+    height: 100px;
 
 `
 
@@ -73,8 +74,10 @@ export const Markers = styled.div`
         border-radius: 1rem;
         padding: .5rem;
         margin-top: 1rem;
+        
     }
 `
 export const ButtonArea = styled.div`
     grid-area: ButtonArea;
+    height: 100px;
 `
