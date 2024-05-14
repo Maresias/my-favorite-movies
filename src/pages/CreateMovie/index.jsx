@@ -33,7 +33,7 @@ export function CreateMovie(){
                     <Textarea/>
 
                     <Markers>
-                        <h2>Marcadores</h2>
+                        <h3>Marcadores</h3>
                        <div>
                             <span>Aqui</span>
                             <span>Sabelar</span>
