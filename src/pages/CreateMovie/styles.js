@@ -14,13 +14,14 @@ export const Container = styled.div`
     
 `
 
-export const Content = styled.div`
+export const Form = styled.form`
     display: grid;
     gap: 4rem;
     overflow-y:scroll;
     width: 1100px;
-    height: 700px;
+    height: 550px;
     margin: 5rem auto 0;
+    padding: 0.3rem;
 
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -79,5 +80,9 @@ export const Markers = styled.div`
 `
 export const ButtonArea = styled.div`
     grid-area: ButtonArea;
-    height: 100px;
+    display: flex;
+    gap: 2rem;
+    > button {
+        width: 100%;
+    }
 `

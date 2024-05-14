@@ -1,9 +1,11 @@
 import { Container } from './styled'
 
 
-export function Button({title, ...rest}){
+export function Button({title, isDark,  ...rest}){
     return(
-        <Container {...rest}>
+        <Container 
+         $isdark={isDark}
+         {...rest}>
             {title}
         </Container>
     )

@@ -1,9 +1,8 @@
 import { FiArrowLeft } from 'react-icons/fi'
-import { Container, Content, Brand, InputArea, Textarea, Markers,  ButtonArea } from './styles'
+import { Container, Form, Brand, InputArea, Textarea, Markers,  ButtonArea } from './styles'
 
 import {Header} from '../../components/Header'
 import { Input } from '../../components/Input'
-import { ButtonText } from '../../components/ButtonText'
 import { Button } from '../../components/Button'
 import { Tag } from '../../components/Tag'
  
@@ -12,13 +11,13 @@ export function CreateMovie(){
         <Container>
             <Header/>
             <main>
-                <Content>
+                <Form>
 
                     <Brand>
-                        <div>
+                        <a href='/'>
                             <FiArrowLeft/>
-                            <ButtonText title={"Voltar"}/>
-                        </div>
+                            Voltar
+                        </a>
                         <h1>Novo filme</h1>
                     </Brand>
 
@@ -41,10 +40,10 @@ export function CreateMovie(){
                     </Markers>
 
                     <ButtonArea>
-                        <Button title="Excluir Filme"/>
+                        <Button title="Excluir Filme" isDark/>
                         <Button title="Salvar Alterações"/>
                     </ButtonArea>
-                </Content>
+                </Form>
             </main>
         </Container>
     )
