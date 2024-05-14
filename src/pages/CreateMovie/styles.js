@@ -38,13 +38,11 @@ export const Brand = styled.div`
     width: 100%;
     color: ${({ theme }) => theme.COLORS.WHITE};
 
-    > div {
+    > a {
+        display: flex;
+        align-items: center;
+        gap: .3rem;
         color: ${({ theme }) => theme.COLORS.PINK};
-        Button{
-            
-            margin-left: .7rem;
-            color: ${({ theme }) => theme.COLORS.PINK};
-        }
 
         margin-bottom: 1.6rem;
     }
@@ -70,12 +68,14 @@ export const Markers = styled.div`
         color: ${({ theme }) => theme.COLORS.WHITE};
     }
     > div {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
         background-color: ${({ theme }) =>  theme.COLORS.BLACK};
         height: 5rem;
         border-radius: 1rem;
-        padding: .5rem;
+        padding: 1rem;
         margin-top: 1rem;
-        
     }
 `
 export const ButtonArea = styled.div`

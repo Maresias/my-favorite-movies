@@ -4,7 +4,7 @@ import { Container, Form, Brand, InputArea, Textarea, Markers,  ButtonArea } fro
 import {Header} from '../../components/Header'
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
-import { Tag } from '../../components/Tag'
+import { MovieIten } from '../../components/MovieIten'
  
 export function CreateMovie(){
     return (
@@ -34,14 +34,15 @@ export function CreateMovie(){
                     <Markers>
                         <h3>Marcadores</h3>
                        <div>
-                            <span>Aqui</span>
-                            <span>Sabelar</span>
+                            <MovieIten  value="Batman"/>
+                            <MovieIten isNew placeholder="Novo Marcador"/>
                        </div>
                     </Markers>
 
                     <ButtonArea>
                         <Button title="Excluir Filme" isDark/>
                         <Button title="Salvar Alterações"/>
+                        
                     </ButtonArea>
                 </Form>
             </main>
