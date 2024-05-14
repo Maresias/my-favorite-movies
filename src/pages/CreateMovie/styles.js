@@ -18,7 +18,7 @@ export const Form = styled.form`
     display: grid;
     gap: 4rem;
     overflow-y:scroll;
-    width: 1100px;
+    width: 880px;
     height: 550px;
     margin: 5rem auto 0;
     padding: 0.3rem;
