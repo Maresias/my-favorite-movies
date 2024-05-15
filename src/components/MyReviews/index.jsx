@@ -1,9 +1,8 @@
 import { Container } from './styles'
 import star from '../../assets/stars.svg'
-import { Children } from 'react'
 
 
-export function Section({title, children}){
+export function MyReviews({title, children}){
     return (
         <Container  >
             <h3>{title}</h3>
