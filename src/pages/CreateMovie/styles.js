@@ -60,6 +60,13 @@ export const Textarea  = styled.textarea`
     border: none;
     border-radius: .3rem;
     background-color: ${({ theme}) => theme.COLORS.BACKGROUND_800};
+
+    color: ${({theme }) => theme.COLORS.WHITE};
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+
+
+    resize: none;
 `
 
 export const Markers = styled.div`

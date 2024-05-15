@@ -5,9 +5,10 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     min-width: 170px;
-    padding: .5rem;
+    
     background-color: ${({ theme, $isnew}) => $isnew ? "transparent" : theme.COLORS.BACKGROUND_800};
     border-radius: 0.3rem;
+    border: ${({ theme, $isnew }) => $isnew ? `1px dashed ${ theme.COLORS.GRAY_200}` : "none" };
 
     > input, button{
         padding: .3rem;
@@ -19,16 +20,19 @@ export const Container = styled.div`
     > input{
         width: 100%;
         color: ${({ theme}) => theme.COLORS.WHITE };
+        padding: .5rem;
 
 
-        &placeholder{
-            color: rebeccapurple;
+        &::placeholder{
+            color: ${({ theme }) => theme.COLORS.GRAY_200};
         }
+
     }
 
     > button{
         cursor: pointer;
         color: ${({ theme}) => theme.COLORS.PINK};
+        
     }
 
 
