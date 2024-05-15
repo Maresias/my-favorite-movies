@@ -55,8 +55,11 @@ export const InputArea  = styled.div`
 `
 export const Textarea  = styled.textarea`
     grid-area: TextArea;
-    height: 100px;
-
+    height: 200px;
+    padding: 1rem;
+    border: none;
+    border-radius: .3rem;
+    background-color: ${({ theme}) => theme.COLORS.BACKGROUND_800};
 `
 
 export const Markers = styled.div`
