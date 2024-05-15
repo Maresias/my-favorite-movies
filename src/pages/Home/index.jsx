@@ -27,49 +27,6 @@ export function Home(){
                      <Tag title="Herói"/>
                    </Frame>
                 </Section>
-
-                <Section title={"Super Man"}>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam minus possimus assumenda velit, esse dicta aut deserunt explicabo voluptates dolores, voluptatibus aliquid saepe amet dolore nemo molestiae ab quisquam nesciunt.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique voluptates totam corporis dignissimos sed laudantium eveniet ut, reprehenderit rem cum magni corrupti odit, facere, suscipit perferendis fugit nisi unde optio.</p>
-
-                    <Frame>
-                     <Tag title="Aventura"/>
-                     <Tag title="Acão"/>
-                     <Tag title="Herói"/>
-                   </Frame>
-                </Section>
-                
-                <Section title={"Batman"}>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem blanditiis beatae vel alias quod iure libero iusto placeat, dignissimos dolores ut dolor non recusandae tenetur delectus unde? Veritatis, minima porro!</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde sit fugiat dignissimos praesentium atque suscipit delectus est exercitationem quibusdam libero sint eligendi quod voluptatibus deserunt quasi, officiis ipsa ratione fugit.</p>
-
-                    <Frame>
-                     <Tag title="Aventura"/>
-                     <Tag title="Acão"/>
-                     <Tag title="Herói"/>
-                   </Frame>
-                </Section>
-                <Section title={"Super Ricos"}>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla obcaecati harum voluptas, labore accusamus, non exercitationem minus sit voluptatibus aperiam repellendus nihil voluptatum ratione et, commodi eius consequuntur? Fugiat, ratione.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt recusandae nam cupiditate eligendi! Soluta tempore, blanditiis ea fugiat sequi expedita ad voluptatibus consectetur ex ab debitis impedit est at nobis?</p>
-
-                    <Frame>
-                     <Tag title="Aventura"/>
-                     <Tag title="Acão"/>
-                     <Tag title="Herói"/>
-                   </Frame>
-                </Section>
-
-                <Section title={"Bitcoin"}>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta labore sunt vitae possimus sint delectus soluta sit, suscipit quidem iste, alias culpa, laborum omnis tenetur facilis explicabo quasi quas dolorem!</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque minima sapiente eum, ratione ipsum mollitia doloribus nesciunt dignissimos hic itaque? Autem tenetur asperiores nisi voluptas dolor odit aut fugit voluptate?</p>
-
-                    <Frame>
-                     <Tag title="Aventura"/>
-                     <Tag title="Acão"/>
-                     <Tag title="Herói"/>
-                   </Frame>
-                </Section>
             </Content>
         </Container>
     )

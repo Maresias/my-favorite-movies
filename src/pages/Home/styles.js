@@ -41,8 +41,9 @@ export const Content = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    max-width:  1200px;
-    height: 500px;
+    max-width:  1000px;
+    height: fit-content;
+    max-height: 500px;
     overflow-y: scroll;
     padding: .2rem;
 
