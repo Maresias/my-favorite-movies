@@ -29,7 +29,7 @@ export function CreateMovie(){
 
                     </InputArea>
 
-                    <Textarea/>
+                    <Textarea placeholder='Observações'/>
 
                     <Markers>
                         <h3>Marcadores</h3>
