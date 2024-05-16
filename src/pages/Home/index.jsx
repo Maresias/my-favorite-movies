@@ -29,7 +29,41 @@ export function Home(){
                         Possimus saepe earum maiores minima dolor odio ea reprehenderit nihil, labore mollitia animi cumque!
                         `,
                         tags:[
-                            {id: "1", name: "ALEXANDRE"}
+                            {id: "1", name: "Aventura"},
+                            {id: "2", name: "Ação"},
+                            {id: "3", name: "Super-herói"}
+                        ]
+                    }}/>
+
+                <MyReviews
+                    data={{
+                        title: "Batman",
+                        assessment: `
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, quasi adipisci. Atque repellat accusamus praesentium 
+                        eius! Possimus saepe earum maiores minima dolor odio ea reprehenderit nihil, labore mollitia animi cumque!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, quasi adipisci. Atque repellat accusamus praesentium eius! 
+                        Possimus saepe earum maiores minima dolor odio ea reprehenderit nihil, labore mollitia animi cumque!
+                        `,
+                        tags:[
+                            {id: "1", name: "Anti-Social"},
+                            {id: "2", name: "Ação"},
+                            {id: "3", name: "Super-herói"}
+                        ]
+                    }}/>
+
+                <MyReviews
+                    data={{
+                        title: "Piratas",
+                        assessment: `
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, quasi adipisci. Atque repellat accusamus praesentium 
+                        eius! Possimus saepe earum maiores minima dolor odio ea reprehenderit nihil, labore mollitia animi cumque!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, quasi adipisci. Atque repellat accusamus praesentium eius! 
+                        Possimus saepe earum maiores minima dolor odio ea reprehenderit nihil, labore mollitia animi cumque!
+                        `,
+                        tags:[
+                            {id: "1", name: "Aventura"},
+                            {id: "2", name: "Ação"},
+                            {id: "3", name: "Ladrões"}
                         ]
                     }}/>
 

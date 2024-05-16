@@ -11,7 +11,7 @@ export const Box = styled.div`
     justify-content: space-between;
     align-items: center;
     height: 3rem;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 
     h2 {

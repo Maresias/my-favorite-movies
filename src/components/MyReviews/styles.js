@@ -22,13 +22,7 @@ export const Container = styled.section`
     }
 
     footer{
-        background-color: rebeccapurple;
+        
     }
-
-    span{
-        background-color: aliceblue;
-        font-size: 20px;
-    }
-
     
 `
