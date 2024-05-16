@@ -7,7 +7,6 @@ export const Container = styled.div`
     overflow-y: hidden;
 
     main{
-        border: 1px solid red;
         width: 100%;
         height: 100vh;
     }
@@ -19,8 +18,8 @@ export const Container = styled.div`
 export const Content = styled.div`
         border: 1px solid rebeccapurple;
         width: 400px;
-        max-height: 400px;
-        margin: 0 auto;
+        max-height: 400vh;
+        margin: 3rem auto 0;
         overflow-y: scroll;
 
 `
