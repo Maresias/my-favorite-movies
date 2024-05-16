@@ -16,9 +16,8 @@ export function MyReviews({data, ...rest}){
             <footer>
                {
                 data.tags.map( tag =>
-                    <span key={tag.id}>
-                        {tag.name}
-                    </span>
+                    <Tag key={tag.id}
+                       title={tag.name}/>
                 )
                }
             </footer>
