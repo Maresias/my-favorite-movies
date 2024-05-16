@@ -21,5 +21,14 @@ export const Container = styled.section`
         width: 10rem;
     }
 
+    footer{
+        background-color: rebeccapurple;
+    }
+
+    span{
+        background-color: aliceblue;
+        font-size: 20px;
+    }
+
     
 `
