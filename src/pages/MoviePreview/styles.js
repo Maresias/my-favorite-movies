@@ -13,12 +13,10 @@ export const Container = styled.div`
 `
 
 
-
-
 export const Content = styled.div`
         border: 1px solid rebeccapurple;
-        width: 400px;
-        max-height: 400vh;
+        width: 1000px;
+        height: 400vh;
         margin: 3rem auto 0;
         overflow-y: scroll;
 

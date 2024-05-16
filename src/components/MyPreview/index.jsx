@@ -1,4 +1,4 @@
-import { Container, Brand, Date } from './styles'
+import { Container, Brand, Date, Content, Markers} from './styles'
 
 import star from '../../assets/stars.svg'
 import time from '../../assets/time.svg'
@@ -16,10 +16,17 @@ export function MyPreview({ dados, ...rest}){
                     <img src={star} alt="" />
                 </Brand>
                 <Date>
+                    <img src="https://github.com/Maresias.png" alt="foto do usúario" />
                     <p>Por {dados.name}</p>
                     <p><img src={time} alt="" /> {dados.date} As { dados.time}</p>
                 </Date>
+                <Markers>
+                    <span>ola</span>
+                </Markers>
             </div>
+            <Content>
+
+            </Content>
         </Container>
     )
 }
