@@ -21,7 +21,29 @@ export function MoviePreview(){
                                 {id: "1", nome: "Ação"},
                                 {id: "2", nome: "Anti-Social"},
                                 {id: "3", nome: "Super-Herói"}
-                            ]
+                            ],
+                            paragraph:`
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ratione a f
+                            ugiat laboriosam molestiae asperiores voluptatum, alias, sunt 
+                            officia nobis delectus iste, magni soluta exercitationem cum reiciendis labore 
+                            aspernatur maxime.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ratione a f
+                            ugiat laboriosam molestiae asperiores voluptatum, alias, sunt 
+                            officia nobis delectus iste, magni soluta exercitationem cum reiciendis labore 
+                            aspernatur maxime.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ratione a f
+                            ugiat laboriosam molestiae asperiores voluptatum, alias, sunt 
+                            officia nobis delectus iste, magni soluta exercitationem cum reiciendis labore 
+                            aspernatur maxime.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ratione a f
+                            ugiat laboriosam molestiae asperiores voluptatum, alias, sunt 
+                            officia nobis delectus iste, magni soluta exercitationem cum reiciendis labore 
+                            aspernatur maxime.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ratione a f
+                            ugiat laboriosam molestiae asperiores voluptatum, alias, sunt 
+                            officia nobis delectus iste, magni soluta exercitationem cum reiciendis labore 
+                            aspernatur maxime.
+                            `
                         }}
                    />
                 </Content>
