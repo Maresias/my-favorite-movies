@@ -42,6 +42,7 @@ export const Date = styled.div`
     align-items: center;
     gap: .7rem;
     color: ${({ theme}) => theme.COLORS.GRAY_200};
+    margin-top: 1rem;
     font-size: 1rem;
 
     > img{
