@@ -5,6 +5,7 @@ import time from '../../assets/time.svg'
 import { FiArrowLeft } from 'react-icons/fi'
 
 import { ButtonText } from '../ButtonText'
+import { Tag } from '../../components/Tag' 
 
 export function MyPreview({ dados, ...rest}){
     return ( 
@@ -21,7 +22,16 @@ export function MyPreview({ dados, ...rest}){
                     <p><img src={time} alt="" /> {dados.date} As { dados.time}</p>
                 </Date>
                 <Markers>
-                    <span>ola</span>
+                    {
+                        dados.tags &&
+                        <footer>
+                           {
+                            dados.tags.map(tag =>
+                                <span>{tag.nome}</span>
+                            )
+                           }
+                        </footer>
+                    }
                 </Markers>
             </div>
             <Content>

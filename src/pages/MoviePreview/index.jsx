@@ -16,7 +16,12 @@ export function MoviePreview(){
                             title: "Batman",
                             name: "Alexandre",
                             date: "15/05/2024",
-                            time: "22:29"
+                            time: "22:29",
+                            tags: [
+                                {id: "1", nome: "Ação"},
+                                {id: "2", nome: "Anti-Social"},
+                                {id: "3", nome: "Super-Herói"}
+                            ]
                         }}
                    />
                 </Content>
