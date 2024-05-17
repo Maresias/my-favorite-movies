@@ -27,7 +27,7 @@ export function MyPreview({ dados, ...rest}){
                         <footer>
                            {
                             dados.tags.map(tag =>
-                                <span>{tag.nome}</span>
+                               <Tag key={tag.id} title={tag.nome}/>
                             )
                            }
                         </footer>
