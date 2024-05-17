@@ -35,7 +35,7 @@ export function MyPreview({ dados, ...rest}){
                 </Markers>
             </div>
             <Content>
-
+                <p>{dados.paragraph}</p>
             </Content>
         </Container>
     )

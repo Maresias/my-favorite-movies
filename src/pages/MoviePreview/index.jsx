@@ -31,7 +31,7 @@ export function MoviePreview(){
                             ugiat laboriosam molestiae asperiores voluptatum, alias, sunt 
                             officia nobis delectus iste, magni soluta exercitationem cum reiciendis labore 
                             aspernatur maxime.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ratione a f
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ratione a f
                             ugiat laboriosam molestiae asperiores voluptatum, alias, sunt 
                             officia nobis delectus iste, magni soluta exercitationem cum reiciendis labore 
                             aspernatur maxime.

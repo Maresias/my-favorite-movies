@@ -62,5 +62,6 @@ export const Markers = styled.div`
     margin-top: 3.2rem;
 `
 export const Content = styled.div`
-
+    text-align: justify;
+    word-wrap: break-word;
 `
