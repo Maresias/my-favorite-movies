@@ -6,11 +6,16 @@ import { ButtonText } from '../../components/ButtonText'
 export function Perfil (){
     return (
         <Container>
-            <Avatar>
-                <div>
+            <header>
+                <a href='#'>
                     <FiArrowLeft/>
                     <ButtonText title={"Voltar"}/>
-                </div>
+                </a>
+            </header>
+
+            <Avatar>
+                <img src="https://www.github.com/Maresias.png" alt="" />
+
             </Avatar>
                 <Form>
 
