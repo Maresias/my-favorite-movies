@@ -27,9 +27,22 @@ export const Container = styled.div`
 
 
 export const Avatar = styled.div`
+    text-align: center;
+    margin-top: -140px;
+
+    margin-bottom: 5rem;
+    > img {
+        width: 300px;
+        border-radius: 50%;
+    }
+
 
 `
 
 export const Form = styled.form`
-
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 500px;
+    margin: 0 auto;
 `
