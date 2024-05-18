@@ -1,6 +1,6 @@
 import { Container, Avatar, Form} from './styles'
 
-import { FiArrowLeft, FiMail, FiUser, FiLock } from 'react-icons/fi'
+import { FiArrowLeft, FiMail, FiUser, FiLock, FiCamera } from 'react-icons/fi'
 
 
 
@@ -22,14 +22,14 @@ export function Perfil (){
                     <img src="https://www.github.com/Maresias.png" alt="" />
 
                     <label htmlFor="avatar">
-                        <Input id="avatar" type="file"/>
+                        <Input icon={FiCamera} id="avatar" type="file"/>
                     </label>
                     </Avatar>
                
-                        <Input icon={FiUser} placeholder="Alexandre Correia"/>
+                        <Input icon={FiUser} placeholder="Alexandre Correia" type="text"/>
                         <Input icon={FiMail} placeholder="Email" type="text"/>
-                        <Input icon={FiLock} placeholder="Senha Atual"/>
-                        <Input icon={FiLock} placeholder="Nova Senha"/>
+                        <Input icon={FiLock} placeholder="Senha Atual" type="password"/>
+                        <Input icon={FiLock} placeholder="Nova Senha" type="password"/>
                         <Button title={"Salvar"}/>
                 </Form>
         </Container>

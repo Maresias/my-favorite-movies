@@ -28,12 +28,14 @@ export const Container = styled.div`
 
 export const Avatar = styled.div`
     text-align: center;
-    margin-top: -140px;
-
-    margin-bottom: 5rem;
+    margin-top: -130px;
     > img {
-        width: 300px;
+        width: 250px;
         border-radius: 50%;
+    }
+
+    > Input {
+        display: none;
     }
 
 
@@ -43,6 +45,6 @@ export const Form = styled.form`
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 500px;
+    width: 400px;
     margin: 0 auto;
 `
