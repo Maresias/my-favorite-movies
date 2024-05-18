@@ -7,7 +7,7 @@ import GlobalStyles from './pages/styles/global'
 import theme from './pages/styles/theme'
 
 
-import {MoviePreview} from './pages/MoviePreview'
+import {Perfil} from './pages/Perfil'
 
 
 
@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider  theme={ theme }>
       <GlobalStyles/>
-      <MoviePreview />
+      <Perfil />
     </ThemeProvider>
   </React.StrictMode>,
 )
