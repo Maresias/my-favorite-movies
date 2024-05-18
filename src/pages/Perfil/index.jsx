@@ -1,6 +1,6 @@
 import { Container, Avatar, Form} from './styles'
 
-import { FiArrowLeft, FiMail } from 'react-icons/fi'
+import { FiArrowLeft, FiMail, FiUser, FiLock } from 'react-icons/fi'
 
 
 
@@ -26,10 +26,10 @@ export function Perfil (){
                     </label>
                     </Avatar>
                
-                        <Input placeholder="Alexandre Correia"/>
+                        <Input icon={FiUser} placeholder="Alexandre Correia"/>
                         <Input icon={FiMail} placeholder="Email" type="text"/>
-                        <Input/>
-                        <Input/>
+                        <Input icon={FiLock} placeholder="Senha Atual"/>
+                        <Input icon={FiLock} placeholder="Nova Senha"/>
                         <Button title={"Salvar"}/>
                 </Form>
         </Container>
