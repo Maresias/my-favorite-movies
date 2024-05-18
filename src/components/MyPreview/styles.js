@@ -62,6 +62,7 @@ export const Markers = styled.div`
     margin-top: 3.2rem;
 `
 export const Content = styled.div`
+    margin-top: 2rem;
     text-align: justify;
-    word-wrap: break-word;
+    color: ${({ theme }) => theme.COLORS.WHITE};
 `
