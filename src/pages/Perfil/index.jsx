@@ -1,6 +1,9 @@
 import { Container, Avatar, Form} from './styles'
 
-import { FiArrowLeft } from 'react-icons/fi'
+import { FiArrowLeft, FiMail } from 'react-icons/fi'
+
+
+
 import { ButtonText } from '../../components/ButtonText'
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
@@ -24,7 +27,7 @@ export function Perfil (){
                     </Avatar>
                
                         <Input placeholder="Alexandre Correia"/>
-                        <Input/>
+                        <Input icon={FiMail} placeholder="Email" type="text"/>
                         <Input/>
                         <Input/>
                         <Button title={"Salvar"}/>
