@@ -10,7 +10,14 @@ export const Container = styled.div`
         width: 50%;
         opacity: 0.4;
     }
+
+    > div {
+        width: 50%;
+    }
 `
 export const Form = styled.form`
-    width: 50%;
+   
+`
+export const Brand = styled.div`
+
 `
