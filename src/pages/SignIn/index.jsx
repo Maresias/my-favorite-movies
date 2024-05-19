@@ -1,10 +1,9 @@
 import { Container, Form, Brand } from './styles'
 import { FiLock, FiMail } from 'react-icons/fi'
 
-import  backgroundImg from '../../assets/backgrounImg.png'
-
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
+import { Background } from '../../components/Background'
 
 
 
@@ -26,7 +25,7 @@ export function SingIn(){
                     <a href="#">Criar Conta</a>
                 </Form>
             </div>
-            <img src={backgroundImg} alt="Imagem de uma sala de cinema" />
+            <Background/>
         </Container>
     )
 }
