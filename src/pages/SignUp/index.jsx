@@ -23,7 +23,7 @@ export function SignUp(){
                     <Input/>
                     <Input/>
                     <Button/>
-
+                    <a href="#">Criar conta</a>
                 </Form>
             </div>
 
