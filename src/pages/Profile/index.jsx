@@ -8,7 +8,7 @@ import { ButtonText } from '../../components/ButtonText'
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
 
-export function Perfil (){
+export function Profile (){
     return (
         <Container>
             <header>
