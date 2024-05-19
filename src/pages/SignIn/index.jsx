@@ -5,7 +5,7 @@ import  backgroundImg from '../../assets/backgrounImg.png'
 
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
-import { ButtonText } from '../../components/ButtonText'
+
 
 
 export function SingIn(){
@@ -23,7 +23,7 @@ export function SingIn(){
                     <Input icon={FiMail} type="text" placeholder="E-Mail"/>
                     <Input icon={FiLock} type="password" placeholder="Senha"/>
                     <Button title={"Entra"}/>
-                    <a href="#"><ButtonText title="Criar Conta"/></a>
+                    <a href="#">Criar Conta</a>
                 </Form>
             </div>
             <img src={backgroundImg} alt="Imagem de uma sala de cinema" />
