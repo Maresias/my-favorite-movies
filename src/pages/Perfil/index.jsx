@@ -22,7 +22,8 @@ export function Perfil (){
                     <img src="https://www.github.com/Maresias.png" alt="" />
 
                     <label htmlFor="avatar">
-                        <Input icon={FiCamera} id="avatar" type="file"/>
+                        <FiCamera/>
+                        <input type="file" />
                     </label>
                     </Avatar>
                
