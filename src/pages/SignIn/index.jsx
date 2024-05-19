@@ -22,7 +22,7 @@ export function SingIn(){
                     <Input icon={FiMail} type="text" placeholder="E-Mail"/>
                     <Input icon={FiLock} type="password" placeholder="Senha"/>
                     <Button title={"Entra"}/>
-                    <a href="#">Criar Conta</a>
+                    <a href="#"> Criar Conta</a>
                 </Form>
             </div>
             <Background/>

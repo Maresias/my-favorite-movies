@@ -14,6 +14,7 @@ export const Container = styled.div`
 
 export const Brand = styled.div`
         text-align: left;
+        padding-top: 4rem;
     h1 {
         color: ${({ theme }) => theme.COLORS.PINK};
         font-size: 3.4rem;
@@ -31,7 +32,7 @@ export const Form = styled.form`
     display: grid;
     gap: .7rem;
     > legend {
-        margin: 3rem 0;
+        margin-bottom: 3rem;
         font-size: 1.6rem;
         color: ${({ theme }) => theme.COLORS.WHITE};
     }
@@ -43,8 +44,10 @@ export const Form = styled.form`
     }
 
     a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .3rem;
         color: ${({ theme }) => theme.COLORS.PINK};
-        display: inline;
-        text-align: center;
     }
 `

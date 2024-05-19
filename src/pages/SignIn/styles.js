@@ -43,7 +43,7 @@ export const Brand = styled.div`
     h1 {
         color: ${({ theme }) => theme.COLORS.PINK};
         font-size: 3.4rem;
-       margin-left: -.2rem;
+        margin-left: -.2rem;
     }
 
     p {
