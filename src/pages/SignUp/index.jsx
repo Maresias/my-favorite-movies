@@ -3,7 +3,7 @@ import { Container, Brand, Form } from './styles'
 
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
-import {}
+import { Background } from '../../components/Background'
 
 export function SignUp(){
     return (
@@ -26,6 +26,8 @@ export function SignUp(){
 
                 </Form>
             </div>
+
+            <Background/>
         </Container>
     )
 }
