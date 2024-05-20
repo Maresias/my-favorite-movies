@@ -1,10 +1,9 @@
-import { Box, Container, Content, NewMovie, Frame } from './styles'
+import { Box, Container, Content, NewMovie } from './styles'
 import { FiPlus } from 'react-icons/fi'
 
 
 import { Header } from '../../components/Header'
 import { MyReviews } from '../../components/MyReviews'
-import { Tag } from '../../components/Tag'
 
 export function Home(){
     return (
