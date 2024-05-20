@@ -43,15 +43,12 @@ export const Avatar = styled.div`
         width: 4rem;
         height: 4rem;
         border-radius: 50%;
-
         cursor: pointer;
-
-
         position: absolute;
         left: 60%;
         top: 65%;
-
         background-color: ${({ theme })=> theme.COLORS.PINK};
+
         > input {
             display: none;
         }
@@ -59,7 +56,19 @@ export const Avatar = styled.div`
         > svg{
            font-size: 40px;
         }
+
     }
+
+    label:hover{
+        transition: .5s;
+        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+        box-shadow: 0px -20px 236px -28px inset ${({ theme }) => theme.COLORS.BACKGROUND_600};
+
+
+            > svg {
+                color: ${({ theme }) => theme.COLORS.PINK};
+            }
+        }
 
 `
 

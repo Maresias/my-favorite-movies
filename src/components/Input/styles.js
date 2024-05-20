@@ -26,5 +26,6 @@ export const Container = styled.div`
 
        color: ${({ theme }) => theme.COLORS.GRAY_200};
        margin-left: .5rem;
+       margin-right: .5rem;
     }
 `
