@@ -26,7 +26,7 @@ export const Brand = styled.div`
     align-items: center;
     margin-top: 2rem;
     
-    > h2 {
+    > a {
         font-size: 3rem;
         font-weight: 400;
         color: ${({ theme}) => theme.COLORS.WHITE};

@@ -13,7 +13,7 @@ export function Profile (){
     return (
         <Container>
             <header>
-                <Link href='#'>
+                <Link to={"/"}>
                     <FiArrowLeft/>
                     <ButtonText title={"Voltar"}/>
                 </Link>
