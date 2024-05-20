@@ -7,8 +7,18 @@ export const Container = styled.header`
     justify-content: space-between;
     display: flex;
     align-items: center;
-    
     padding: 2rem;
+
+    img{
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        object-fit: cover;
+
+        border: 1px solid ${({ theme}) => theme.COLORS.GRAY_200};
+        }
+    
+    
     h1{
         color: ${({ theme }) => theme.COLORS.PINK};
     }
@@ -19,15 +29,6 @@ export const Container = styled.header`
 
         strong {
             color: ${({theme}) => theme.COLORS.WHITE};
-        }
-
-        > img{
-            width: 5rem;
-            height: 5rem;
-            border-radius: 50%;
-            object-fit: cover;
-
-            border: 1px solid ${({ theme}) => theme.COLORS.GRAY_200};
         }
 
         >div {

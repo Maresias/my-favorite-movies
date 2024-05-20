@@ -1,4 +1,5 @@
 import { Container, Brand } from './styles'
+import { Link } from 'react-router-dom'
 
 import { Input } from '../Input'
 import { ButtonText } from '../ButtonText'
@@ -17,7 +18,7 @@ export function Header(){
                     <strong>Alexandre Ribeiro</strong>
                     <ButtonText title={"sair"}/>
                 </div>
-                <img src="https://github.com/Maresias.png" alt="Foto do usúario" />
+                <Link to={"/profile"}><img src="https://github.com/Maresias.png" alt="Foto do usúario" /></Link>
             </div>
         </Container>
     )

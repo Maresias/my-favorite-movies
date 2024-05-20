@@ -11,7 +11,7 @@ export function Home(){
             <Header/>
             <Box>
                 <h2>Meus Filmes</h2>
-                <NewMovie>
+                <NewMovie to={"/createmovie"}>
                     <FiPlus/>
                     Adicionar Filme
                 </NewMovie>
