@@ -1,4 +1,5 @@
 import { Container, Brand, Date, Content, Markers} from './styles'
+import { Link } from 'react-router-dom'
 
 import star from '../../assets/stars.svg'
 import time from '../../assets/time.svg'
@@ -11,7 +12,7 @@ export function MyPreview({ dados, ...rest}){
     return ( 
         <Container { ...rest }>
             <div>
-                <a href="#"><FiArrowLeft/><ButtonText title={"Voltar"}/> </a>
+                <Link to={"/"}><FiArrowLeft/><ButtonText title={"Voltar"}/> </Link>
                 <Brand>
                     <h2>{dados.title}</h2>
                     <img src={star} alt="" />
