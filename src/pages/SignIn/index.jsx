@@ -7,7 +7,7 @@ import { Background } from '../../components/Background'
 
 
 
-export function SingIn(){
+export function SignIn(){
     return (
         <Container>
             <div>
