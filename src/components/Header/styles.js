@@ -7,7 +7,7 @@ export const Container = styled.header`
     justify-content: space-between;
     display: flex;
     align-items: center;
-    gap: 4rem;
+    
     padding: 2rem;
     h1{
         color: ${({ theme }) => theme.COLORS.PINK};
@@ -55,7 +55,11 @@ export const Container = styled.header`
 
 export const Brand = styled.div`
     width: 100%;
-  align-items: center;
+    align-items: center;
+
+    h1{
+        margin-right: 1rem;
+    }
 `
 
 
