@@ -36,4 +36,18 @@ export default createGlobalStyle`
     a {
         text-decoration: none;
     }
+
+    input{
+        font-weight: 300;
+        font-family: "Roboto", sans-serif;
+    }
+
+    input:focus{
+        outline: none;
+        box-shadow: 0px -20px 56px -28px inset ${({ theme }) => theme.COLORS.BACKGROUND_600};
+    }
+
+    textarea:focus{
+        box-shadow: 0px -20px 236px -28px inset ${({ theme }) => theme.COLORS.BACKGROUND_600};
+    }
 `

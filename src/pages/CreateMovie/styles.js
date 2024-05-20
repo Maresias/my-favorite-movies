@@ -21,7 +21,7 @@ export const Form = styled.form`
     width: 880px;
     height: 550px;
     margin: 5rem auto 0;
-    padding: 0.3rem;
+    padding: 0.4rem;
 
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -55,6 +55,7 @@ export const InputArea  = styled.div`
 `
 export const Textarea  = styled.textarea`
     grid-area: TextArea;
+
     height: 200px;
     padding: 1rem;
     border: none;
@@ -63,10 +64,15 @@ export const Textarea  = styled.textarea`
 
     color: ${({theme }) => theme.COLORS.WHITE};
     font-family: "Roboto", sans-serif;
+    font-weight: 300;
     font-size: 1rem;
 
-
+    outline: none;
     resize: none;
+
+    :hover{
+        box-shadow: 0px -20px 36px -28px inset ${({ theme }) => theme.COLORS.BACKGROUND_600};
+    }
 `
 
 export const Markers = styled.div`

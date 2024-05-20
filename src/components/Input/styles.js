@@ -19,8 +19,6 @@ export const Container = styled.div`
         color: ${({theme}) => theme.COLORS.GRAY_100};
         padding: 0.5rem;
         font-size: 1rem;
-        font-weight: 300;
-        font-family: "Roboto", sans-serif;
         
     }
 
@@ -29,9 +27,4 @@ export const Container = styled.div`
        color: ${({ theme }) => theme.COLORS.GRAY_200};
        margin-left: .5rem;
     }
-
-   >  input:focus{
-            outline: none;
-            box-shadow: 0px -20px 36px -28px inset ${({ theme }) => theme.COLORS.BACKGROUND_600};
-        }
 `
