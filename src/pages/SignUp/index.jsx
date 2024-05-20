@@ -20,9 +20,9 @@ export function SignUp(){
                         Crie sua conta
                     </legend>
 
-                    <Input icon={FiUser} placeholder="Nome"/>
-                    <Input icon={FiMail} placeholder="E-Mail"/>
-                    <Input icon={FiLock} placeholder="Senha"/>
+                    <Input icon={FiUser} placeholder="Nome" type="text"/>
+                    <Input icon={FiMail} placeholder="E-Mail" type="text"/>
+                    <Input icon={FiLock} placeholder="Senha" type="password"/>
                     <Button title={"Cadastrar"}/>
                     <a href="#"><FiArrowLeft/> Voltar para o login</a>
                 </Form>
