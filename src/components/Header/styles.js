@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
-
+    width: 100%;
     border-bottom: 1px solid white;
     height: 8rem;
-
+    justify-content: space-between;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     gap: 4rem;
     padding: 2rem;
@@ -16,10 +15,7 @@ export const Container = styled.header`
 
     > div{
         display: flex;
-        flex-direction: row-reverse;
         gap: 0.5rem;
-        
-
 
         strong {
             color: ${({theme}) => theme.COLORS.WHITE};
@@ -35,7 +31,7 @@ export const Container = styled.header`
         }
 
         >div {
-             min-width:170px;
+            min-width:170px;
             text-align: right;
             display: flex;
             flex-direction: column;
@@ -55,6 +51,11 @@ export const Container = styled.header`
 
     }
 
+`
+
+export const Brand = styled.div`
+    width: 100%;
+  align-items: center;
 `
 
 
