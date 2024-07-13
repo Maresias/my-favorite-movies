@@ -36,6 +36,12 @@ export const NewMovie = styled(Link)`
     width: 200px;
 
     cursor: pointer;
+
+  
+    &:hover{
+        transition: 0.7s;
+        box-shadow: ${({ theme }) => `0px 8px 24px ${theme.COLORS.PINK}` };
+    }
 `
 
 export const Content = styled.div`
