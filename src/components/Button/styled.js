@@ -14,7 +14,7 @@ export const Container = styled.button`
             transition: .7s;
             border: ${({theme, $isdark}) => $isdark && `1px solid ${theme.COLORS.PINK}`};
 
-            box-shadow: ${({ theme, $isdark }) => !$isdark && `0px 8px 24px ${theme.COLORS.PINK}` };
+            box-shadow: ${({ theme, $isdark }) => !$isdark ? `0px 8px 24px ${theme.COLORS.PINK}` : `0px 8px 24px ${theme.COLORS.GRAY_100}`};
             
         }
 `
