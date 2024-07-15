@@ -18,7 +18,9 @@ export function Profile (){
                     <ButtonText title={"Voltar"}/>
                 </Link>
             </header>
+            
             <Form>
+
                 <Avatar>
                     <img src="https://www.github.com/Maresias.png" alt="" />
 
