@@ -26,12 +26,12 @@ export function CreateMovie(){
                    
                     <InputArea>
 
-                        <Input type="text" placeholder="Titúlo"/>
-                        <Input type="text" placeholder="Sua Nota de (0 a 5)"/>
+                        <Input type="text" placeholder="Titúlo" required/>
+                        <Input type="text" placeholder="Sua Nota de (0 a 5)" required/>
 
                     </InputArea>
 
-                    <Textarea placeholder='Observações'/>
+                    <Textarea placeholder='Observações' required/>
 
                     <Markers>
                         <h3>Marcadores</h3>
