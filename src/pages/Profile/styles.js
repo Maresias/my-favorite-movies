@@ -48,13 +48,17 @@ export const Avatar = styled.div`
         left: 60%;
         top: 65%;
         background-color: ${({ theme })=> theme.COLORS.PINK};
-
-        > input {
+        > div{
+            padding: 0px;
+        }
+         input {
             display: none;
+            
         }
 
-        > svg{
+         svg{
            font-size: 40px;
+           position: absolute;
         }
 
     }
