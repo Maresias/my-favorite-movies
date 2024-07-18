@@ -18,7 +18,7 @@ export function Header(){
                     <strong>Alexandre Ribeiro</strong>
                     <ButtonText title={"sair"}/>
                 </div>
-                <Link to={"/profile"}><img src="https://github.com/Maresias.png" alt="Foto do usúario" /></Link>
+                <Link to={"/profile"}><img src="" alt="Foto do usúario" /></Link>
             </div>
         </Container>
     )
