@@ -14,6 +14,7 @@ export function Profile (){
         <Container>
             <header>
                 <Link to={"/"}>
+                
                     <FiArrowLeft/>
                     <ButtonText title={"Voltar"}/>
                 </Link>
