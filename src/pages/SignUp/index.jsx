@@ -12,6 +12,11 @@ export function SignUp(){
     const [ name, setName ] = useState("")
     const [ email, setEmail ] = useState("")
     const [ password, setPassword ] = useState("")
+
+
+    function handleSignUp() {
+        console.log(name, email, password)
+    }
     return (
         <Container>
             <div>
@@ -25,12 +30,35 @@ export function SignUp(){
                         Crie sua conta
                     </legend>
 
-                    <Input icon={FiUser} placeholder="Nome" type="text"/>
-                    <Input icon={FiMail} placeholder="E-Mail" type="text"/>
-                    <Input icon={FiLock} placeholder="Senha" type="password"/>
-                    <Button title={"Cadastrar"}/>
-                    <Link to={"/"}><FiArrowLeft/> Voltar para o login</Link>
+                    <Input 
+                        icon={FiUser} 
+                        placeholder="Nome" 
+                        type="text"
+                        onChange={ e => setName( e.target.value )}
+                    />
+
+                    <Input 
+                        icon={FiMail} 
+                        placeholder="E-Mail" 
+                        type="text"
+                        onChange={ e => setEmail( e.target.value )}
+                    />
+
+                    <Input
+                        icon={FiLock} 
+                        placeholder="Senha" 
+                        type="password"
+                        onChange={ e => setPassword( e.target.value )}
+                    />
+
+                    
                 </Form>
+                <Button 
+                        title={"Cadastrar"}
+                        onClick={handleSignUp}
+                    />
+
+                <Link to={"/"}><FiArrowLeft/> Voltar para o login</Link>
             </div>
 
             <Background/>
