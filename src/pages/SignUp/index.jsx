@@ -52,13 +52,13 @@ export function SignUp(){
                     />
 
                     
-                </Form>
                 <Button 
                         title={"Cadastrar"}
                         onClick={handleSignUp}
                     />
 
                 <Link to={"/"}><FiArrowLeft/> Voltar para o login</Link>
+                </Form>
             </div>
 
             <Background/>
