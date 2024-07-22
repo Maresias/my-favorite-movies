@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { Container, Brand, Form } from './styles'
 
 import { FiArrowLeft, FiUser, FiMail, FiLock } from 'react-icons/fi'
@@ -8,6 +9,7 @@ import { Button } from '../../components/Button'
 import { Background } from '../../components/Background'
 
 export function SignUp(){
+    
     return (
         <Container>
             <div>
