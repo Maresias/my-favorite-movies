@@ -11,6 +11,9 @@ import { useAuth } from "../../hooks/auth"
 
 
 export function SignIn(){
+
+    const data = useAuth()
+    
     return (
         <Container>
             <div>
