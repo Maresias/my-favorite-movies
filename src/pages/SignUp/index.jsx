@@ -14,7 +14,8 @@ export function SignUp(){
     const [ password, setPassword ] = useState("")
 
 
-    function handleSignUp() {
+    function handleSignUp(e) {
+        
         console.log(name, email, password)
     }
     return (
