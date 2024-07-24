@@ -9,9 +9,7 @@ import { Background } from '../../components/Background'
 import { useAuth } from "../../hooks/auth"
 import { useState } from "react"
 
-
-
-export function signIn(){
+export function SignIn(){
 
     const [email, setEmail ] = useState("")
     const [password, setPassword ] = useState("")
@@ -19,7 +17,7 @@ export function signIn(){
     const {signIn} = useAuth()
 
     function handleSignIn(){
-        signIn({email, password})
+        signIn({ email, password })
     }
     
     return (
