@@ -11,7 +11,7 @@ import { useState } from "react"
 
 
 
-export function SignIn(){
+export function signIn(){
 
     const [email, setEmail ] = useState("")
     const [password, setPassword ] = useState("")
@@ -19,7 +19,7 @@ export function SignIn(){
     const {signIn} = useAuth()
 
     function handleSignIn(){
-        signIn({})
+        signIn({email, password})
     }
     
     return (
@@ -37,13 +37,18 @@ export function SignIn(){
                         icon={FiMail} 
                         type="text" 
                         placeholder="E-Mail"
+                        onChange={e => setEmail( e.target.value )}
                     />
                     <Input 
                         icon={FiLock} 
                         type="password" 
                         placeholder="Senha"
+                        onChange={ e => setPassword( e.target.value )}
                     />
-                    <Button title={"Entra"}/>
+                    <Button 
+                        title={"Entra"}
+                        onClick={handleSignIn}
+                    />
                     <Link to={"/register"}> Criar Conta</Link>
                 </Form>
             </div>
