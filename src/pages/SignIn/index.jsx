@@ -34,8 +34,15 @@ export function SignIn(){
                         Faça seu login
                     </legend>
                     <Input 
-                        icon={FiMail} type="text" placeholder="E-Mail"/>
-                    <Input icon={FiLock} type="password" placeholder="Senha"/>
+                        icon={FiMail} 
+                        type="text" 
+                        placeholder="E-Mail"
+                    />
+                    <Input 
+                        icon={FiLock} 
+                        type="password" 
+                        placeholder="Senha"
+                    />
                     <Button title={"Entra"}/>
                     <Link to={"/register"}> Criar Conta</Link>
                 </Form>
