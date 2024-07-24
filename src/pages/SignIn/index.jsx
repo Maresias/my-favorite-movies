@@ -7,12 +7,20 @@ import { Button } from '../../components/Button'
 import { Background } from '../../components/Background'
 
 import { useAuth } from "../../hooks/auth"
+import { useState } from "react"
 
 
 
 export function SignIn(){
 
-    const data = useAuth()
+    const [email, setEmail ] = useState("")
+    const [password, setPassword ] = useState("")
+
+    const {signIn} = useAuth()
+
+    function handleSignIn(){
+        signIn({})
+    }
     
     return (
         <Container>
@@ -25,7 +33,8 @@ export function SignIn(){
                     <legend>
                         Faça seu login
                     </legend>
-                    <Input icon={FiMail} type="text" placeholder="E-Mail"/>
+                    <Input 
+                        icon={FiMail} type="text" placeholder="E-Mail"/>
                     <Input icon={FiLock} type="password" placeholder="Senha"/>
                     <Button title={"Entra"}/>
                     <Link to={"/register"}> Criar Conta</Link>
