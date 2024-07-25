@@ -4,7 +4,11 @@ import { Link } from 'react-router-dom'
 import { Input } from '../Input'
 import { ButtonText } from '../ButtonText'
 
+import {useAuth} from "../../hooks/auth"
+
 export function Header(){
+
+    const { signOut } = useAuth()
     return (
         <Container>
             <Brand>
@@ -16,7 +20,10 @@ export function Header(){
             <div>
                 <div>
                     <strong>Alexandre Ribeiro</strong>
-                    <ButtonText title={"sair"}/>
+                    <ButtonText 
+                    title={"sair"}
+                    onClick={signOut}
+                    />
                 </div>
                 <Link to={"/profile"}><img src="" alt="Foto do usúario" /></Link>
             </div>
