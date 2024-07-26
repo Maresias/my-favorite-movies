@@ -41,9 +41,16 @@ export function Profile (){
                
                         <Input 
                             icon={FiUser} 
-                            placeholder="Alexandre Correia" 
-                            type="text"/>
-                        <Input icon={FiMail} placeholder="Email" type="text"/>
+                            type="text"
+                            value={name}
+                            onChange={ e => setName( e.target.value)}
+                        />
+                        <Input 
+                            icon={FiMail} 
+                            type="text"
+                            value={email}
+                            onChange={ e => setEmail( e.target.value)}
+                        />
                         <Input icon={FiLock} placeholder="Senha Atual" type="password"/>
                         <Input icon={FiLock} placeholder="Nova Senha" type="password"/>
                         <Button title={"Salvar"}/>
