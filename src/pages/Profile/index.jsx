@@ -51,8 +51,16 @@ export function Profile (){
                             value={email}
                             onChange={ e => setEmail( e.target.value)}
                         />
-                        <Input icon={FiLock} placeholder="Senha Atual" type="password"/>
-                        <Input icon={FiLock} placeholder="Nova Senha" type="password"/>
+                        <Input icon={FiLock} 
+                            placeholder="Senha Atual" 
+                            type="password"
+                            onChange={ e => setPassworldOld( e.target.velue)}
+                        />
+                        <Input icon={FiLock} 
+                            placeholder="Nova Senha" 
+                            type="password"
+                            onChange={ e => setPassworldNew( e.target.value)}
+                        />
                         <Button title={"Salvar"}/>
                 </Form>
         </Container>
