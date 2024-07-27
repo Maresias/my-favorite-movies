@@ -18,6 +18,7 @@ export function Profile (){
     const [ email, setEmail ] = useState(user.email)
     const [ passwordOld, setPassworldOld ] = useState()
     const [ passworldNew, setPassworldNew ] = useState()
+    
     return (
         <Container>
             <header>

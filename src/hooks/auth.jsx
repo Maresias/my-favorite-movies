@@ -36,6 +36,8 @@ function AuthProvider({ children }) {
         setData({})
     }
 
+    
+
     useEffect(()=>{
         const user = localStorage.getItem("@rocketmovies:user")
         const token = localStorage.getItem("@rocketmovies:token")
