@@ -11,7 +11,7 @@ import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
 
 export function Profile (){
-
+   
     const { user, updateProfile } = useAuth()
 
     const [ name, setName ] = useState(user.name)

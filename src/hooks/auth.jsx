@@ -43,11 +43,12 @@ function AuthProvider({ children }) {
 
         try{
 
-            await api.put("/users",  user )
+            await api.put("/users", user)
 
             localStorage.setItem('@rocketmovies:user', JSON.stringify(user))
 
-            setData({user, token:data.token})
+            setData({user, token: data.token})
+            alert("Perfil Atualizado")
 
         }catch (error){
             
