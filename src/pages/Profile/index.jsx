@@ -27,7 +27,7 @@ export function Profile (){
             passwordOld: passworldNew
         }
 
-        updateProfile(user)
+        await updateProfile({user})
     }
 
     return (
