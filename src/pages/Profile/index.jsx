@@ -12,13 +12,22 @@ import { Button } from '../../components/Button'
 
 export function Profile (){
 
-    const { user } = useAuth()
+    const { user, updateProfile } = useAuth()
 
     const [ name, setName ] = useState(user.name)
     const [ email, setEmail ] = useState(user.email)
     const [ passwordOld, setPassworldOld ] = useState()
     const [ passworldNew, setPassworldNew ] = useState()
-    
+
+    async function handleUpdate(){
+        const user = {
+            name,
+            email,
+            passworld: passwordOld,
+            
+        }
+    }
+
     return (
         <Container>
             <header>
