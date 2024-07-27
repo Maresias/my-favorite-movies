@@ -13,6 +13,7 @@ function AuthProvider({ children }) {
         try{
             const response =  await api.post("/sessions", {email, password})
             const {user, token } = response.data
+
             
             api.defaults.headers.common['Authorization'] = `Bearer ${token}`
 
@@ -20,7 +21,9 @@ function AuthProvider({ children }) {
             localStorage.setItem("@rocketmovies:token", token)
 
             setData({user, token})
+            
         }catch(error){
+            
             if(error.response){
                 alert(error.response.data.message)
             }else{
@@ -40,10 +43,9 @@ function AuthProvider({ children }) {
 
         try{
 
-            await api.put("/users", { user })
+            await api.put("/users",  user )
 
             localStorage.setItem('@rocketmovies:user', JSON.stringify(user))
-            localStorage.setItem('@rocketmovies:token', token)
 
             setData({user, token:data.token})
 
@@ -59,15 +61,15 @@ function AuthProvider({ children }) {
     }
 
     useEffect(()=>{
-        const user = localStorage.getItem("@rocketmovies:user")
         const token = localStorage.getItem("@rocketmovies:token")
+        const user  = localStorage.getItem("@rocketmovies:user")
 
         if ( user && token) {
             api.defaults.headers.common['Authorization'] = `Bearer ${token}`
 
             setData({
                 token,
-                user : JSON.parse(user)
+                user: JSON.parse(user)
             })
         }
     }, [])

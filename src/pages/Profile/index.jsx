@@ -24,8 +24,10 @@ export function Profile (){
             name,
             email,
             passworld: passwordOld,
-            
+            passwordOld: passworldNew
         }
+
+        updateProfile(user)
     }
 
     return (
@@ -77,6 +79,7 @@ export function Profile (){
 
                         <Button 
                             title={"Salvar"}
+                            onClick={handleUpdate}
                         />
                 </Form>
         </Container>
