@@ -20,6 +20,7 @@ export function Profile (){
     const [ passworldNew, setPassworldNew ] = useState()
 
     const [ avatar, setAvatar ] = useState(user.avatar)
+    const [ avatarFile, setAvatarFile ] = useState(null)
 
     async function handleUpdate(){
         const user = {
@@ -29,7 +30,16 @@ export function Profile (){
             passwordOld: passworldNew
         }
 
-        await updateProfile({user})
+        await updateProfile({user, avatarFile})
+    }
+
+    function handleChangeFile(event){
+        const file = event.target.files[0]
+        
+        setAvatarFile(file)
+
+        const imagenPreview = URL.createObjectURL(file)
+        setAvatar(imagenPreview)
     }
 
     return (
@@ -45,14 +55,14 @@ export function Profile (){
             <Form>
 
                 <Avatar>
-                    <img src={avatar} alt="" />
+                    <img src={avatar} alt="Foto do usuário" />
 
                     <label htmlFor="avatar">
                         <FiCamera/>
                         <input 
                             id='avatar'
                             type="file" 
-                            
+                            onChange={handleChangeFile}
                         />
                     </label>
                     </Avatar>
