@@ -21,7 +21,7 @@ export function Profile (){
     const [ passwordOld, setPassworldOld ] = useState()
     const [ passworldNew, setPassworldNew ] = useState()
 
-    const avatarUrl =  `${api.defaults.baseURL}/files/${user.avatar}`
+    const avatarUrl = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}`: avatarPlaceholder
 
     
 
@@ -40,7 +40,7 @@ export function Profile (){
     }
 
     function handleChangeFile(event){
-        
+
         const file = event.target.files[0]
         setAvatarFile(file)
 

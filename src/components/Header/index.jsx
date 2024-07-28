@@ -4,11 +4,16 @@ import { Link } from 'react-router-dom'
 import { Input } from '../Input'
 import { ButtonText } from '../ButtonText'
 
+import { api } from '../../services/api'
+import avatarPlaceHolder from '../../assets/avatar_placeholder.svg'
+
 import {useAuth} from "../../hooks/auth"
 
 export function Header(){
 
-    const { signOut } = useAuth()
+    const { user, signOut } = useAuth()
+
+    const avatarUrl = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}`: avatarPlaceHolder
     return (
         <Container>
             <Brand>
@@ -19,13 +24,13 @@ export function Header(){
             </Brand>
             <div>
                 <div>
-                    <strong>Alexandre Ribeiro</strong>
+                    <strong>{user.name}</strong>
                     <ButtonText 
                     title={"sair"}
                     onClick={signOut}
                     />
                 </div>
-                <Link to={"/profile"}><img src="" alt="Foto do usúario" /></Link>
+                <Link to={"/profile"}><img src={avatarUrl} alt="Foto do usúario" /></Link>
             </div>
         </Container>
     )
