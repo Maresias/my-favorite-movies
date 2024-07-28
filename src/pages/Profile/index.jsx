@@ -19,6 +19,8 @@ export function Profile (){
     const [ passwordOld, setPassworldOld ] = useState()
     const [ passworldNew, setPassworldNew ] = useState()
 
+    const [ avatar, setAvatar ] = useState(user.avatar)
+
     async function handleUpdate(){
         const user = {
             name,
@@ -43,11 +45,15 @@ export function Profile (){
             <Form>
 
                 <Avatar>
-                    <img src="https://www.github.com/Maresias.png" alt="" />
+                    <img src={avatar} alt="" />
 
                     <label htmlFor="avatar">
                         <FiCamera/>
-                        <Input type="file" />
+                        <input 
+                            id='avatar'
+                            type="file" 
+                            
+                        />
                     </label>
                     </Avatar>
                

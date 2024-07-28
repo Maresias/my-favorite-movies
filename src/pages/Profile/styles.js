@@ -52,7 +52,7 @@ export const Avatar = styled.div`
             padding: 0px;
         }
          input {
-            display: none;
+           display: none;
             
         }
 
