@@ -30,7 +30,7 @@ export function Header(){
                     onClick={signOut}
                     />
                 </div>
-                <Link to={"/profile"}><img src={avatarUrl} alt="Foto do usúario" /></Link>
+                <Link to={"/profile"}><img src={avatarUrl} alt={user.name} /></Link>
             </div>
         </Container>
     )
