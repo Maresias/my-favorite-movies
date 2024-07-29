@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { FiArrowLeft } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 
@@ -9,6 +10,15 @@ import { Button } from '../../components/Button'
 import { MovieIten } from '../../components/MovieIten'
  
 export function CreateMovie(){
+
+    const [ tags, setTag ] = useState([])
+    const [ newTag, setNewTag ] = useState("")
+
+
+    function handleAddTag(){
+        setTag( prevState => [...prevState, newTag ])
+        setNewTag("")
+    }
     return (
         <Container>
             <Header/>
@@ -36,8 +46,24 @@ export function CreateMovie(){
                     <Markers>
                         <h3>Marcadores</h3>
                        <div>
-                            <MovieIten  value="Batman"/>
-                            <MovieIten isNew placeholder="Novo Marcador"/>
+
+                            {
+                                tags.map((tag, index) => (
+                                    <MovieIten
+                                    key={String(index)}
+                                    value={tag}
+                                    onClick={() => {}}
+                                    />
+                                ))
+                            }
+
+                            <MovieIten 
+                                isNew
+                                placeholder="Novo Marcador"
+                                onChange={ e => setNewTag( e.target.value)}
+                                onClick={handleAddTag}
+                                value={newTag}
+                            />
                        </div>
                     </Markers>
 
