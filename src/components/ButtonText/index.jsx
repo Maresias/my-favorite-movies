@@ -1,8 +1,12 @@
 import { Container } from "./styles";
 
-export function ButtonText({title, ...rest}){
+export function ButtonText({isDark, title, ...rest}){
     return (
-        <Container type="button" {...rest}>
+        <Container 
+        type="button" 
+        $isDark={isDark}
+        {...rest}
+        >
             {title}
         </Container>
     )

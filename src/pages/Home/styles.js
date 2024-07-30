@@ -30,8 +30,8 @@ export const NewMovie = styled(Link)`
     align-items: center;
     justify-content: center;
     gap: .5rem;
-    background-color: ${({ theme }) => theme.COLORS.PINK};
-    color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+    background-color: ${({ theme, $isAdd }) =>  $isAdd ? theme.COLORS.GRAY_200 :theme.COLORS.PINK};
+    color: ${({ theme, $isAdd }) => $isAdd ? theme.COLORS.WHITE :theme.COLORS.BACKGROUND_900};
     padding: .8rem;
     border-radius: .5rem;
     width: 200px;
@@ -41,7 +41,7 @@ export const NewMovie = styled(Link)`
   
     &:hover{
         transition: 0.7s;
-        box-shadow: ${({ theme }) => `0px 8px 24px ${theme.COLORS.PINK}` };
+        box-shadow: ${({ theme, $isAdd}) => $isAdd ? `0px 8px 24px ${theme.COLORS.GRAY_200}` : `0px 8px 24px${theme.COLORS.PINK}`};
     }
 `
 

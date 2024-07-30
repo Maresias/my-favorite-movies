@@ -15,7 +15,7 @@ export function Home(){
                     <FiPlus/>
                     Avaliar Filme
                 </NewMovie>
-                <NewMovie to={"/createmovie"}>
+                <NewMovie $isAdd to={"/"}>
                     <FiPlus/>
                     Adicionar Filme
                 </NewMovie>
