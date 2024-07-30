@@ -9,7 +9,7 @@ import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
 import { MovieIten } from '../../components/MovieIten'
  
-export function CreateMovie(){
+export function RateMovie(){
 
     const [ tags, setTag ] = useState([])
     const [ newTag, setNewTag ] = useState("")

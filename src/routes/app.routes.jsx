@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 
 import { Home } from '../pages/Home'
 import { Profile } from '../pages/Profile'
-import { CreateMovie } from '../pages/CreateMovie'
+import { RateMovie } from '../pages/RateMovie'
 import { MoviePreview } from '../pages/MoviePreview'
 
 
@@ -11,7 +11,7 @@ export function AppRoutes(){
         <Routes>
             <Route path="/" element={ <Home/> }/>
             <Route path="/profile" element={ <Profile/> } />
-            <Route path="/createmovie" element={ <CreateMovie/> }/>
+            <Route path="/ratemovie" element={ <RateMovie/> }/>
             <Route path="/moviepreview" element={ <MoviePreview/> } />
         </Routes>
     )
