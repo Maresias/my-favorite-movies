@@ -21,7 +21,7 @@ export function CreateMovie(){
     }
 
     function handleRemoveTag(deleted){
-        setTag( prevstate => )
+        setTag( prevstate => prevstate.filter( tag => tag !== deleted) )
     }
     return (
         <Container>
@@ -56,7 +56,7 @@ export function CreateMovie(){
                                     <MovieIten
                                     key={String(index)}
                                     value={tag}
-                                    onClick={() => handleRemoveTag()}
+                                    onClick={() => handleRemoveTag(tag)}
                                     />
                                 ))
                             }
