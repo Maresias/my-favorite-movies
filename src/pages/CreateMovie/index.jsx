@@ -3,6 +3,7 @@ import { Container, Form } from "./styles";
 import { Header } from "../../components/Header";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
+import { Brand } from "../../components/Brand";
 
 
 
@@ -11,6 +12,7 @@ export function CreateMovie ( ){
         <Container>
             <Header/>
             <Form>
+                <Brand title={"Adicionar Filme"}/>
                 <Input type="text" placeholder="Nome do filme"/>
                 <textarea placeholder="Resumo do filme"/>
 

@@ -1,14 +1,15 @@
-import { Container } from "../Header/styles";
+import { Container } from "./styles"
 
-import { FiArrowDownLeft } from "react-icons/fi";
+import { FiArrowLeft } from "react-icons/fi";
 import { Link } from "react-router-dom";
-export function Brand(){
+export function Brand({title}){
     return (
         <Container>
             <Link>
-                <FiArrowDownLeft/>
-                <h1>Voltar</h1>
+                <FiArrowLeft/>
+                Voltar
             </Link>
+            <h1>{title}</h1>
         </Container>
     )
 }

@@ -8,7 +8,7 @@ export const Form = styled.form`
     width: 700px;
     margin: 0 auto;
     margin-top: 7rem;
-    text-align: center;
+
     textarea {
         margin: 2rem 0;
         grid-area: TextArea;
