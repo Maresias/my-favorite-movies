@@ -51,6 +51,13 @@ export function CreateMovie(){
                         <h3>Marcadores</h3>
                        <div>
 
+                           <MovieIten 
+                               isNew
+                               placeholder="Novo Marcador"
+                               onChange={ e => setNewTag( e.target.value)}
+                               onClick={handleAddTag}
+                               value={newTag}
+                           />
                             {
                                 tags.map((tag, index) => (
                                     <MovieIten
@@ -61,13 +68,6 @@ export function CreateMovie(){
                                 ))
                             }
 
-                            <MovieIten 
-                                isNew
-                                placeholder="Novo Marcador"
-                                onChange={ e => setNewTag( e.target.value)}
-                                onClick={handleAddTag}
-                                value={newTag}
-                            />
                        </div>
                     </Markers>
 
