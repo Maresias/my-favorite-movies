@@ -28,7 +28,6 @@ export const Form = styled.form`
     grid-template-areas:
     "Brand Brand"
     "InputArea InputArea"
-    "TextArea TextArea"
     "Markers Markers"
     "ButtonArea ButtonArea"
     ;
@@ -53,27 +52,7 @@ export const InputArea  = styled.div`
     flex-direction: row;
     gap: 3rem;
 `
-export const Textarea  = styled.textarea`
-    grid-area: TextArea;
 
-    height: 200px;
-    padding: 1rem;
-    border: none;
-    border-radius: .3rem;
-    background-color: ${({ theme}) => theme.COLORS.BACKGROUND_800};
-
-    color: ${({theme }) => theme.COLORS.WHITE};
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
-
-    outline: none;
-    resize: none;
-
-    :hover{
-        box-shadow: 0px -20px 36px -28px inset ${({ theme }) => theme.COLORS.BACKGROUND_600};
-    }
-`
 
 export const Markers = styled.div`
     grid-area: Markers;
