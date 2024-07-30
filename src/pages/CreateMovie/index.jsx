@@ -34,7 +34,7 @@ export function CreateMovie(){
                             <FiArrowLeft/>
                             Voltar
                         </Link>
-                        <h1>Novo filme</h1>
+                        <h1>Avaliar filme</h1>
                     </Brand>
 
                    
