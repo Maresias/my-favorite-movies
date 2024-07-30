@@ -9,6 +9,7 @@ export const Container = styled.div`
 
 export const Box = styled.div`
     display: flex;
+    gap: 2rem;
     justify-content: space-between;
     align-items: center;
     height: 3rem;
@@ -17,7 +18,7 @@ export const Box = styled.div`
 
     h2 {
         color: ${({ theme }) => theme.COLORS.WHITE};
-        width: 1030px;
+        width: 700px;
     }
 
     
