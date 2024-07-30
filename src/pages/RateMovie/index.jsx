@@ -2,12 +2,13 @@ import { useState } from 'react'
 import { FiArrowLeft } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 
-import { Container, Form, Brand, InputArea, Markers,  ButtonArea } from './styles'
+import { Container, Form, InputArea, Markers,  ButtonArea } from './styles'
 
 import {Header} from '../../components/Header'
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
 import { MovieIten } from '../../components/MovieIten'
+import { Brand } from '../../components/Brand'
  
 export function RateMovie(){
 
@@ -28,16 +29,9 @@ export function RateMovie(){
             <Header/>
             <main>
                 <Form>
+                    
+                <Brand title={"Avaliar Filme"}/>
 
-                    <Brand>
-                        <Link to={"/"}>
-                            <FiArrowLeft/>
-                            Voltar
-                        </Link>
-                        <h1>Avaliar filme</h1>
-                    </Brand>
-
-                   
                     <InputArea>
 
                         <Input type="text" placeholder="Titúlo" />
