@@ -12,7 +12,7 @@ export function CreateMovie ( ){
             <Header/>
             <Form>
                 <Input type="text" placeholder="Nome do filme"/>
-                <textarea/>
+                <textarea placeholder="Resumo do filme"/>
 
                 <Button
                     title={"Salvar filme"}
