@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { FiArrowLeft } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 
-import { Container, Form, Brand, InputArea, Textarea, Markers,  ButtonArea } from './styles'
+import { Container, Form, Brand, InputArea, Markers,  ButtonArea } from './styles'
 
 import {Header} from '../../components/Header'
 import { Input } from '../../components/Input'
@@ -45,7 +45,7 @@ export function RateMovie(){
 
                     </InputArea>
 
-                    <Textarea placeholder='Observações' />
+                    
 
                     <Markers>
                         <h3>Marcadores</h3>
