@@ -14,7 +14,7 @@ export const Form = styled.form`
         grid-area: TextArea;
         
         height: 200px;
-        width: 90%;
+        width: 100%;
         padding: 1rem;
         border: none;
         border-radius: .3rem;
