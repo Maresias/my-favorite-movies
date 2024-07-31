@@ -7,6 +7,7 @@ import { Brand } from "../../components/Brand";
 
 
 import { useState } from "react";
+import { api } from "../../services/api";
 
 
 export function CreateMovie ( ){
@@ -15,7 +16,12 @@ export function CreateMovie ( ){
     const [ description, setDescription ] = useState()
 
     async function handleAddMovie(){
-        
+        await api.post("/movie", {
+            title,
+            description
+        })
+
+        alert("filme cadastrado com sucesso!!!")
     }
     return(
         <Container>
@@ -35,6 +41,7 @@ export function CreateMovie ( ){
                 <div>
                     <Button
                         title={"Salvar filme"}
+                        onClick={handleAddMovie}
                     />
                 </div>
             </Form>
