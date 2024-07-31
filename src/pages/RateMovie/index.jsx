@@ -29,8 +29,8 @@ export function RateMovie(){
             <Header/>
             <main>
                 <Form>
-                    
-                <Brand title={"Avaliar Filme"}/>
+
+                <Brand title={"Avaliar Filme"} route={"/"}/>
 
                     <InputArea>
 
