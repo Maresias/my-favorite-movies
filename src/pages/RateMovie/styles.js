@@ -32,20 +32,7 @@ export const Form = styled.form`
     "ButtonArea ButtonArea"
     ;
 `
-export const Brand = styled.div`
-    grid-area: Brand;
-    width: 100%;
-    color: ${({ theme }) => theme.COLORS.WHITE};
 
-    > a {
-        display: flex;
-        align-items: center;
-        gap: .3rem;
-        color: ${({ theme }) => theme.COLORS.PINK};
-
-        margin-bottom: 1.6rem;
-    }
-`
 export const InputArea  = styled.div`
     grid-area: InputArea;
     display: flex;
