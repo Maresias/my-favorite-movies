@@ -12,7 +12,7 @@ export function CreateMovie ( ){
         <Container>
             <Header/>
             <Form>
-                <Brand title={"Adicionar Filme"}/>
+                <Brand title={"Adicionar Filme"} route={"/"}/>
                 <Input type="text" placeholder="Nome do filme"/>
                 <textarea placeholder="Resumo do filme"/>
 
