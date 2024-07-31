@@ -66,8 +66,8 @@ export function RateMovie(){
                     </Markers>
 
                     <ButtonArea>
-                        <Button title="Excluir Filme" isDark/>
-                        <Button title="Salvar Alterações"/>
+                        <Button title="Excluir Nota" isDark/>
+                        <Button title="Salvar Nota"/>
                         
                     </ButtonArea>
                 </Form>

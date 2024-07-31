@@ -32,7 +32,9 @@ export const Form = styled.form`
             box-shadow: 0px -20px 36px -28px inset ${({ theme }) => theme.COLORS.BACKGROUND_600};
         }
     }
+
     button {
         width: 70%;
+        margin-left: 5rem;
     }
     `
