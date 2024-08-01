@@ -24,6 +24,10 @@ export function RateMovie(){
     function handleRemoveTag(deleted){
         setTag( prevstate => prevstate.filter( tag => tag !== deleted) )
     }
+
+    async function handleAddNote(){
+        console.log(title, nota)
+    }
     return (
         <Container>
             <Header/>
@@ -43,7 +47,7 @@ export function RateMovie(){
                         <Input 
                             type="text" 
                             placeholder="Sua Nota de (0 a 5)"
-                            onChange={ e => setTitle( e.target.value )} 
+                            onChange={ e => setNota( e.target.value )} 
                         />
 
                     </InputArea>
