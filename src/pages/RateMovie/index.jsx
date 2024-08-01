@@ -36,12 +36,14 @@ export function RateMovie(){
 
                         <Input 
                             type="text" 
-                            placeholder="Titúlo" 
+                            placeholder="Titúlo"
+                            onChange={ e => setTitle( e.target.value )} 
                         />
 
                         <Input 
                             type="text" 
-                            placeholder="Sua Nota de (0 a 5)" 
+                            placeholder="Sua Nota de (0 a 5)"
+                            onChange={ e => setTitle( e.target.value )} 
                         />
 
                     </InputArea>
