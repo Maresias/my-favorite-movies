@@ -10,6 +10,8 @@ import { Brand } from '../../components/Brand'
  
 export function RateMovie(){
 
+    const [ title, setTitle ] = useState("")
+    const [ nota, setNota ] = useState("")
     const [ tags, setTag ] = useState([])
     const [ newTag, setNewTag ] = useState("")
 
