@@ -34,12 +34,17 @@ export function RateMovie(){
 
                     <InputArea>
 
-                        <Input type="text" placeholder="Titúlo" />
-                        <Input type="text" placeholder="Sua Nota de (0 a 5)" />
+                        <Input 
+                            type="text" 
+                            placeholder="Titúlo" 
+                        />
+
+                        <Input 
+                            type="text" 
+                            placeholder="Sua Nota de (0 a 5)" 
+                        />
 
                     </InputArea>
-
-                    
 
                     <Markers>
                         <h3>Marcadores</h3>
