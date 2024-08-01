@@ -78,7 +78,10 @@ export function RateMovie(){
 
                     <ButtonArea>
                         <Button title="Excluir Nota" isDark/>
-                        <Button title="Salvar Nota"/>
+                        <Button 
+                            title="Salvar Nota"
+                            onClick={handleAddNote}
+                        />
                         
                     </ButtonArea>
                 </Form>
