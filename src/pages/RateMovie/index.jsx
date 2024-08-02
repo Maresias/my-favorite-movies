@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { api } from '../../services/api'
 
 import { Container, Form, InputArea, Markers,  ButtonArea } from './styles'
 
@@ -26,7 +27,8 @@ export function RateMovie(){
     }
 
     async function handleAddNote(){
-        console.log(title, nota)
+        const response = await api.get(`/movies?/title=${title}`)
+        console.log(title, nota, response)
     }
     return (
         <Container>
@@ -39,7 +41,7 @@ export function RateMovie(){
                     <InputArea>
 
                         <Input 
-                            type="text" 
+                            type="" 
                             placeholder="Titúlo"
                             onChange={ e => setTitle( e.target.value )} 
                         />
