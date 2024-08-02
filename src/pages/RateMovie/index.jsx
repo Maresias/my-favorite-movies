@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { api } from '../../services/api'
 
 import { Container, Form, InputArea, Markers,  ButtonArea } from './styles'
@@ -27,10 +27,10 @@ export function RateMovie(){
     }
 
     async function handleAddNote(){
-        console.log(title)
-        const response = await api.get("/movie/", title)
-        console.log(response.data)
+        const response = await api.get(`/movie?title=${title}`)
+        console.log(response)
     }
+
     return (
         <Container>
             <Header/>
