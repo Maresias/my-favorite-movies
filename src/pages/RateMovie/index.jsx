@@ -27,7 +27,7 @@ export function RateMovie(){
     }
 
     async function handleAddNote(){
-        const response = await api.get(`/movies?/title=${title}`)
+        const response = await api.get("/movie/", title)
         console.log(title, nota, response)
     }
     return (
