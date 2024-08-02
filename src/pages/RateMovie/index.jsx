@@ -11,7 +11,7 @@ import { Brand } from '../../components/Brand'
  
 export function RateMovie(){
 
-    const [ title, setTitle ] = useState([])
+    const [ title, setTitle ] = useState("Piratas do Caribe")
     const [ nota, setNota ] = useState("")
     const [ tags, setTag ] = useState([])
     const [ newTag, setNewTag ] = useState("")
@@ -27,8 +27,9 @@ export function RateMovie(){
     }
 
     async function handleAddNote(){
+        console.log(title)
         const response = await api.get("/movie/", title)
-        console.log(title, nota, response)
+        console.log(response.data)
     }
     return (
         <Container>
@@ -41,7 +42,7 @@ export function RateMovie(){
                     <InputArea>
 
                         <Input 
-                            type="" 
+                            type="search" 
                             placeholder="Titúlo"
                             onChange={ e => setTitle( e.target.value )} 
                         />
