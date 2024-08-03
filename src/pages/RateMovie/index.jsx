@@ -33,7 +33,7 @@ export function RateMovie(){
         
     }
 
-    async function handleSelected() {
+    function handleSelected() {
         setDados(title)
     }
 
@@ -54,8 +54,6 @@ export function RateMovie(){
             setDescription("")
             setTitle("")
         }
-
-        
 
     }, [dados])
 
