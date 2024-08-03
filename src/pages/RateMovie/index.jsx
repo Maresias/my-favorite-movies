@@ -8,7 +8,6 @@ import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
 import { MovieIten } from '../../components/MovieIten'
 import { Brand } from '../../components/Brand'
-import { MdDescription } from 'react-icons/md'
  
 export function RateMovie(){
     const [dados, setDados ] = useState("")
@@ -38,9 +37,6 @@ export function RateMovie(){
         setDados(title)
     }
 
-    useEffect(()=>{
-    }, [])
-
     useEffect(() => {
         async function searchMovie(){
             const response = await api.get(`/movie?title=${dados}`)
@@ -52,7 +48,14 @@ export function RateMovie(){
         
         }
 
-        searchMovie()
+        if(dados){
+            searchMovie()
+        }else{
+            setDescription("")
+            setTitle("")
+        }
+
+        
 
     }, [dados])
 
