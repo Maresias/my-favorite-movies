@@ -37,6 +37,15 @@ export const Form = styled.form`
 export const MovieArea = styled.div`
     grid-area: MovieArea;
     cursor: pointer;
+    h4{
+        color: ${({ theme}) => theme.COLORS.WHITE};
+        margin: 0 0 2rem 1rem;
+        font-weight: 400;
+    }
+
+    p {
+        color: ${({ theme }) => theme.COLORS.GRAY_200};
+    }
 `
 
 export const InputArea  = styled.div`
