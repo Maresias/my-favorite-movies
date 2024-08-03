@@ -30,7 +30,21 @@ export function RateMovie(){
 
     async function handleAddNote(){
         
-        
+        try{
+            await api.post("/notes", {
+                rating:nota,
+                tags,
+                movie_id:id
+            })
+
+            alert("Filme avaliado com sucesso")
+        }catch(error){
+            if(error.response){
+                alert(error.response.data.message)
+            }else{
+                alert("Não foi possível avaliar")
+            }
+        }
     }
 
     function handleSelected() {
