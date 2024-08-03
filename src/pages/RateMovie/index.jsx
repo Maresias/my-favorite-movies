@@ -8,13 +8,17 @@ import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
 import { MovieIten } from '../../components/MovieIten'
 import { Brand } from '../../components/Brand'
+import { MdDescription } from 'react-icons/md'
  
 export function RateMovie(){
-
-    const [ title, setTitle ] = useState("Piratas do Caribe")
+    const [dados, setDados ] = useState("")
+    const [ title, setTitle ] = useState("")
     const [ nota, setNota ] = useState("")
     const [ tags, setTag ] = useState([])
     const [ newTag, setNewTag ] = useState("")
+
+    const [movieName, setMovieName ] = useState("")
+    const [description, setDescription ] = useState("")
 
 
     function handleAddTag(){
@@ -27,9 +31,24 @@ export function RateMovie(){
     }
 
     async function handleAddNote(){
-        const response = await api.get(`/movie?title=${title}`)
-        console.log(response)
+        
+        
     }
+
+    useEffect(() => {
+        async function searchMovie(){
+            const response = await api.get(`/movie?title=${dados}`)
+
+            const {title, description } = response.data
+
+            setMovieName(title)
+            setDescription(description)
+        
+        }
+
+        searchMovie()
+
+    }, [dados])
 
     return (
         <Container>
@@ -44,7 +63,7 @@ export function RateMovie(){
                         <Input 
                             type="search" 
                             placeholder="Titúlo"
-                            onChange={ e => setTitle( e.target.value )} 
+                            onChange={ e => setDados( e.target.value )} 
                         />
 
                         <Input 
@@ -53,7 +72,11 @@ export function RateMovie(){
                             onChange={ e => setNota( e.target.value )} 
                         />
 
+
                     </InputArea>
+
+                    <h4>{movieName}</h4>
+                    <p>{description}</p>
 
                     <Markers>
                         <h3>Marcadores</h3>
