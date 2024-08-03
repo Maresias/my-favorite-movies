@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { api } from '../../services/api'
 
-import { Container, Form, InputArea, Markers,  ButtonArea } from './styles'
+import { Container, Form, InputArea, Markers,  ButtonArea, MovieArea } from './styles'
 
 import {Header} from '../../components/Header'
 import { Input } from '../../components/Input'
@@ -33,6 +33,10 @@ export function RateMovie(){
     async function handleAddNote(){
         
         
+    }
+
+    async function handleSelected() {
+        console.log("fiu clicado")
     }
 
     useEffect(() => {
@@ -75,8 +79,12 @@ export function RateMovie(){
 
                     </InputArea>
 
+                    <MovieArea
+                        onClick={handleSelected}
+                    >
                     <h4>{movieName}</h4>
                     <p>{description}</p>
+                    </MovieArea>
 
                     <Markers>
                         <h3>Marcadores</h3>

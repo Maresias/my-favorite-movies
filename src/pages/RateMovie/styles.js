@@ -28,9 +28,14 @@ export const Form = styled.form`
     grid-template-areas:
     "Brand Brand"
     "InputArea InputArea"
+    "MovieArea MovieArea"
     "Markers Markers"
     "ButtonArea ButtonArea"
     ;
+`
+
+export const MovieArea = styled.div`
+    grid-area: MovieArea;
 `
 
 export const InputArea  = styled.div`
