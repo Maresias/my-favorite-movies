@@ -56,7 +56,7 @@ export const Content = styled.div`
     padding: .2rem;
 
     margin: 0 auto;
-    border: 2px solid ${({ theme}) => theme.COLORS.BLACK};
+    
 
 `
 
