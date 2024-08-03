@@ -36,6 +36,7 @@ export const Form = styled.form`
 
 export const MovieArea = styled.div`
     grid-area: MovieArea;
+    cursor: pointer;
 `
 
 export const InputArea  = styled.div`

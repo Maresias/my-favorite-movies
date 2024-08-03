@@ -37,13 +37,14 @@ export function RateMovie(){
 
     async function handleSelected() {
         console.log("fiu clicado")
+        setDados(movieName)
     }
 
     useEffect(() => {
         async function searchMovie(){
             const response = await api.get(`/movie?title=${dados}`)
 
-            const {title, description } = response.data
+            const {id, title, description } = response.data
 
             setMovieName(title)
             setDescription(description)
@@ -68,6 +69,7 @@ export function RateMovie(){
                             type="search" 
                             placeholder="Titúlo"
                             onChange={ e => setDados( e.target.value )} 
+                            value={dados}
                         />
 
                         <Input 
