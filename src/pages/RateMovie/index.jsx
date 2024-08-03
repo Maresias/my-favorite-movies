@@ -14,10 +14,9 @@ export function RateMovie(){
     const [dados, setDados ] = useState("")
     const [ title, setTitle ] = useState("")
     const [ nota, setNota ] = useState("")
+    const [id, setId ] = useState()
     const [ tags, setTag ] = useState([])
     const [ newTag, setNewTag ] = useState("")
-
-    const [movieName, setMovieName ] = useState("")
     const [description, setDescription ] = useState("")
 
 
@@ -36,17 +35,19 @@ export function RateMovie(){
     }
 
     async function handleSelected() {
-        console.log("fiu clicado")
-        setDados(movieName)
+        setDados(title)
     }
+
+    useEffect(()=>{
+    }, [])
 
     useEffect(() => {
         async function searchMovie(){
             const response = await api.get(`/movie?title=${dados}`)
 
             const {id, title, description } = response.data
-
-            setMovieName(title)
+            setTitle(title)
+            setId(id)
             setDescription(description)
         
         }
@@ -84,7 +85,7 @@ export function RateMovie(){
                     <MovieArea
                         onClick={handleSelected}
                     >
-                    <h4>{movieName}</h4>
+                    <h4>{title}</h4>
                     <p>{description}</p>
                     </MovieArea>
 
