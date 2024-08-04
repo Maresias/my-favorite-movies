@@ -1,9 +1,11 @@
 import { Box, Container, Content, NewMovie } from './styles'
 import { FiPlus } from 'react-icons/fi'
 
-
 import { Header } from '../../components/Header'
 import { MyReviews } from '../../components/MyReviews'
+
+import { useAuth } from '../../hooks/auth'
+import { useState } from 'react'
 
 export function Home(){
     return (
