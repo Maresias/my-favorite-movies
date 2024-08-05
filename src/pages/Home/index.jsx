@@ -1,11 +1,24 @@
 import { Box, Container, Content, NewMovie } from './styles'
 import { FiPlus } from 'react-icons/fi'
 
-
 import { Header } from '../../components/Header'
 import { MyReviews } from '../../components/MyReviews'
 
+import { useAuth } from '../../hooks/auth'
+import { useState, useEffect } from 'react'
+import { api } from '../../services/api'
+
 export function Home(){
+
+
+    useEffect(()=>{
+        async function getNotes() {
+            const  dados  = await api.get("/notes/")
+            console.log(dados)
+        }
+        getNotes()
+    },[])
+
     return (
         <Container>
             <Header/>

@@ -25,7 +25,7 @@ export function SignIn(){
             <div>
                 <Form>
                     <Brand>
-                        <h1>RocketMovies</h1>
+                        <h1>My favorite movies</h1>
                         <p>Aplicação para acompanhar tudo que assistir </p>
                     </Brand>
                     <legend>

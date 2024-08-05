@@ -17,7 +17,7 @@ export function Header(){
     return (
         <Container>
             <Brand>
-                <h1>RocketMovies</h1>
+                <h1>My favorites movies</h1>
                 <Input placeholder="Pesquisar pelo título"
                 type="search"
                 />
