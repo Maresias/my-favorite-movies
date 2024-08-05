@@ -14,7 +14,13 @@
 <br>
 
 <p align="center">
-  <img alt="" src="" width="90%">
+  <img alt="" src="./My favorites movies2_page-0001.jpg" width="90%">
+</p>
+<p align="center">
+  <img alt="" src="./my favorites movies3_page-0001.jpg" width="90%">
+</p>
+<p align="center">
+  <img alt="" src="./My favorites movies_page-0001.jpg" width="90%">
 </p>
 
 ## 🚀 Tecnologias
