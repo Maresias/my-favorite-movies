@@ -3,7 +3,6 @@
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-Diagram">Diagram</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -14,20 +13,20 @@
 <br>
 
 <p align="center">
+  <img alt="" src="./My favorites movies_page-0001.jpg" width="90%">
+</p>
+<p align="center">
   <img alt="" src="./My favorites movies2_page-0001.jpg" width="90%">
 </p>
 <p align="center">
   <img alt="" src="./my favorites movies3_page-0001.jpg" width="90%">
-</p>
-<p align="center">
-  <img alt="" src="./My favorites movies_page-0001.jpg" width="90%">
 </p>
 
 ## 🚀 Tecnologias
 
 This project was developed with technologies:
 
-- react
+- React
 - html
 - css
 - Git e Github
