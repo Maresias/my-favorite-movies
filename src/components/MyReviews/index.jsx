@@ -9,7 +9,7 @@ export function MyReviews({data, ...rest}){
         <Container {...rest} >
          <Link to={"/moviepreview"}>{data.title}</Link>
          <img src={star} alt="Estrelas representado a avalição" />
-         <p>{data.assessment}</p>
+         <p>{data.description}</p>
 
          {
             data.tags &&

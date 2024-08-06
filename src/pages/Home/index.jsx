@@ -13,8 +13,7 @@ export function Home(){
 
     useEffect(()=>{
         async function getNotes() {
-            const  dados  = await api.get("/notes/")
-            console.log(dados)
+            const dados  = await api.get("/notes/")
         }
         getNotes()
     },[])
