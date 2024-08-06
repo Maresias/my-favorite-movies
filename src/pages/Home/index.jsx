@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react'
 import { api } from '../../services/api'
 
 export function Home(){
-    const [userData, setUserData ] = useState()
+    const [userData, setUserData ] = useState([])
 
     useEffect(()=>{
         async function getNotes() {
