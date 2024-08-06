@@ -6,7 +6,9 @@ import { Link } from 'react-router-dom'
 
 export function MyReviews({data, ...rest}){
     return (
-        <Container {...rest} >
+        <Container {...rest}
+            key={data.id} 
+        >
          <Link to={"/moviepreview"}>{data.title}</Link>
          <img src={star} alt="Estrelas representado a avalição" />
          <p>{data.description}</p>
