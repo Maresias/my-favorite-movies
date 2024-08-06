@@ -15,6 +15,7 @@ export function Home(){
         async function getNotes() {
             const dados  = await api.get("/notes/")
             setUserData(dados.data)
+            console.log(dados.data)
         }
         getNotes()
     },[])
@@ -34,12 +35,10 @@ export function Home(){
                 </NewMovie>
             </Box>
             <Content>
-
-
                 {
                     userData && 
                     userData.map( dados => (
-                        <MyReviews data={dados}/>
+                        <MyReviews key={dados.id} data={dados}/>
                     ) )
                 }
             </Content>
