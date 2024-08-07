@@ -37,7 +37,7 @@ export function Home(){
                 {
                     userData && 
                     userData.map( dados => (
-                        <MyReviews key={dados.id} data={dados} state={{data:dados}}/>
+                        <MyReviews key={dados.id} data={dados}/>
                     ) )
                 }
             </Content>

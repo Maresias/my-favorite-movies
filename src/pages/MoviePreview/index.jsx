@@ -3,9 +3,13 @@ import { Container, Content } from './styles'
 import { Header } from '../../components/Header'
 import { MyPreview } from '../../components/MyPreview'
 
-
+import { useEffect } from 'react'
 
 export function MoviePreview(){
+
+    useEffect(()=>{
+        console.log(dat)
+    },[])
     return (
         <Container>
             <Header/>
