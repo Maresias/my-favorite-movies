@@ -14,7 +14,6 @@ export function MoviePreview(){
     useEffect(() => { 
         async function preview() {
             const response = await api.get(`/notes/${params.id}`)
-
             console.log(response.data)
         }
 
