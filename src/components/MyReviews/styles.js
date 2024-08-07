@@ -11,6 +11,8 @@ export const Container = styled.section`
     color: ${({ theme }) => theme.COLORS.GRAY_200};
     line-height: 1.6rem;
 
+    cursor: pointer;
+
     > a {
         color: ${({ theme}) => theme.COLORS.WHITE};
         font-weight: 500;
