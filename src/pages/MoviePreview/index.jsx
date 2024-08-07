@@ -3,7 +3,23 @@ import { Container, Content } from './styles'
 import { Header } from '../../components/Header'
 import { MyPreview } from '../../components/MyPreview'
 
+import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import { api } from '../../services/api'
+
 export function MoviePreview(){
+
+    const params = useParams()
+
+    useEffect(() => { 
+        async function preview() {
+            const response = await api.get(`/notes/${params.id}`)
+
+            console.log(response.data)
+        }
+
+        preview()
+     },[])
 
     return (
         <Container>
