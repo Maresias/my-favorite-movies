@@ -4,12 +4,13 @@ import { Tag } from '../Tag'
 import { Link } from 'react-router-dom'
 
 
-export function MyReviews({data, ...rest}){
+export function MyReviews({data, onClick, ...rest}){
     return (
         <Container {...rest}
             key={String(data.id)}
+            onClick={onClick}
         >
-         <Link to={"/moviepreview"}>{data.title}</Link>
+         <h1>{data.title}</h1>
          <img src={star} alt="Estrelas representado a avalição" />
          <p>{data.description}</p>
 
