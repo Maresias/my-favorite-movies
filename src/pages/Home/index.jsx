@@ -42,7 +42,9 @@ export function Home(){
                 {
                     userData && 
                     userData.map( dados => (
+
                         <MyReviews key={dados.id} data={dados} onClick={ ()=> handlePreview(dados.id)}/>
+                            
                     ) )
                 }
             </Content>
