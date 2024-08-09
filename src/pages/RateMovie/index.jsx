@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { api } from '../../services/api'
+import { useNavigate } from 'react-router-dom'
 
 import { Container, Form, InputArea, Markers,  ButtonArea, MovieArea } from './styles'
 
@@ -17,6 +18,8 @@ export function RateMovie(){
     const [ tags, setTag ] = useState([])
     const [ newTag, setNewTag ] = useState("")
     const [description, setDescription ] = useState("")
+
+    const navigate = useNavigate()
 
 
     function handleAddTag(){
@@ -38,6 +41,7 @@ export function RateMovie(){
             })
 
             alert("Filme avaliado com sucesso")
+            navigate("/")
         }catch(error){
             if(error.response){
                 alert(error.response.data.message)

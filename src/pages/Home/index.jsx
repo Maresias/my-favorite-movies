@@ -20,7 +20,6 @@ export function Home(){
         async function getNotes() {
             const dados  = await api.get("/notes/")
             setUserData(dados.data)
-            console.log(dados.data)
         }
         getNotes()
     },[])

@@ -8,6 +8,7 @@ import { Brand } from "../../components/Brand";
 
 import { useState } from "react";
 import { api } from "../../services/api";
+import { useNavigate } from "react-router-dom";
 
 
 export function CreateMovie ( ){
@@ -15,13 +16,28 @@ export function CreateMovie ( ){
     const [ title, setTitle ] = useState()
     const [ description, setDescription ] = useState()
 
+    const navigate = useNavigate()
+
     async function handleAddMovie(){
+
+        
         await api.post("/movie", {
             title,
             description
+        }).then(()=>{
+            alert("filme cadastrado com sucesso!!!")
+
+            navigate("/")
+            
+        })
+        .catch(error => {
+            if(error.response){
+                alert(error.response.data.message)
+            } else {
+                alert("Não foi possível cadastra")
+            }
         })
 
-        alert("filme cadastrado com sucesso!!!")
     }
     return(
         <Container>
