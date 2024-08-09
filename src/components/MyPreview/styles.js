@@ -16,6 +16,11 @@ export const Container = styled.div`
             align-items: center;
             
         }
+
+    }
+
+    footer {
+        margin-top: 2rem;
     }
     
 `
