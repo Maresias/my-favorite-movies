@@ -12,7 +12,7 @@ import avatarPlaceHolder from '../../assets/avatar_placeholder.svg'
 export function MoviePreview(){
 
     const params = useParams()
-    const [ dados, setDados ] = useState([])
+    const [ dado, setDados ] = useState([])
     const {user} = useAuth()
 
     const avatarUrl = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}`: avatarPlaceHolder
@@ -25,20 +25,14 @@ export function MoviePreview(){
         }
         preview()
      },[])
-     
     return (
         <Container>
             <Header/>
             <main>
                 <Content>
-                   {
-                    dados &&
-                    dados.map(dado => (
-                        <MyPreview data={dado} key={dado.id} user={user} avatar={avatarUrl}/>
-                    ))
-                   }
-                    
-                   
+
+                    <MyPreview data={dado} key={dado.id} user={user} avatar={avatarUrl}/>
+      
                 </Content>
             </main>
         </Container>

@@ -7,28 +7,49 @@ import { FiArrowLeft } from 'react-icons/fi'
 
 import { ButtonText } from '../ButtonText'
 import { Tag } from '../../components/Tag' 
+import { GiD10 } from 'react-icons/gi'
 
 export function MyPreview({ data,user, avatar,...rest}){
     return ( 
         <Container
-        key={0}
-        { ...rest }
+            { ...rest }
         >
-            <div>
-                <Link to={"/"}><FiArrowLeft/><ButtonText title={"Voltar"}/> </Link>
-                <Brand>
-                    <h2>{data.title}</h2>
-                    <img src={star} alt="" />
-                </Brand>
-                <Date>
-                    <img src={avatar} alt="foto do usúario" />
-                    <p>Por {user.name}</p>
-                    <p><img src={time} alt="" /> {} As {}</p>
-                </Date>
-            </div>
-            <Content>
-                <p>{data.description}</p>
-            </Content>
+            
+            {
+                data.map( dado =>
+                    <div key={String(dado.id)}>
+                        <Link to={"/"}><FiArrowLeft/><ButtonText title={"Voltar"}/> </Link>
+                        <Brand>
+                            <h2>{dado.title}</h2>
+                            <img src={star} alt="" />
+                        </Brand>
+                        <Date>
+                            <img src={avatar} alt="foto do usúario" />
+                            <p>Por {user.name}</p>
+                            <p><img src={time} alt="" /> {} As {}</p>
+                        </Date>
+                        <Content>
+
+                            <p>{dado.description}</p>
+                                {
+                                    dado.tag &&
+                                        <footer>
+                                            {
+                                                dado.tag.map( tag =>
+                                                    <Tag
+                                                    key={String(tag.id)}
+                                                    title={tag.name}
+                                                    />
+                                                )
+                                            }
+                                        </footer>
+                                }
+                        </Content>
+
+                    </div>
+                )
+            }
+
         </Container>
     )
 }
