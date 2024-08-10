@@ -7,7 +7,6 @@ import { FiArrowLeft } from 'react-icons/fi'
 
 import { ButtonText } from '../ButtonText'
 import { Tag } from '../../components/Tag' 
-import { GiD10 } from 'react-icons/gi'
 
 export function MyPreview({ data,user, avatar,...rest}){
     return ( 
@@ -26,7 +25,7 @@ export function MyPreview({ data,user, avatar,...rest}){
                         <Date>
                             <img src={avatar} alt="foto do usúario" />
                             <p>Por {user.name}</p>
-                            <p><img src={time} alt="" /> {} As {}</p>
+                            <p><img src={time} alt="" />  As {dado.updated_}</p>
                         </Date>
                         <Content>
 
